@@ -10,3 +10,24 @@ com/example/grandapp/Menu.java
  com.example.grandapp.Menu
 com/example/grandapp/MainActivity.java
  com.example.grandapp.MainActivity
+ com.example.grandapp.MainActivity$TareaAsincronica
+com/example/grandapp/Publicacion.java
+ com.example.grandapp.Publicacion
+com/example/grandapp/publicaciones.java
+ com.example.grandapp.publicaciones
+com/example/grandapp/medicamentos.java
+ com.example.grandapp.medicamentos
+com/example/grandapp/UsuariosController.java
+ com.example.grandapp.UsuariosController
+com/example/grandapp/Comentario.java
+ com.example.grandapp.Comentario
+com/example/grandapp/comentarios.java
+ com.example.grandapp.comentarios
+com/example/grandapp/TipoMed.java
+ com.example.grandapp.TipoMed
+com/example/grandapp/MedicamentoXusuario.java
+ com.example.grandapp.MedicamentoXusuario
+com/example/grandapp/Tema.java
+ com.example.grandapp.Tema
+com/example/grandapp/Usuarios.java
+ com.example.grandapp.Usuarios

@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.814"
-        app:srcCompat="@drawable/boton4FINAL" />
+        app:srcCompat="@drawable/boton4final" />
 
     <ImageButton
         android:id="@+id/BtnLibro"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.222"
-        app:srcCompat="@drawable/boton3FINAL" />
+        app:srcCompat="@drawable/boton3final" />
 
     <ImageButton
         android:id="@+id/BtnMovilidad"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.516"
-        app:srcCompat="@drawable/boton2FINAL" />
+        app:srcCompat="@drawable/boton2final" />
 
     <ImageButton
         android:id="@+id/BtnDiario"
@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.516"
-        app:srcCompat="@drawable/boton6FINAL" />
+        app:srcCompat="@drawable/boton6final" />
 
     <ImageButton
         android:id="@+id/BtnRemedios"
@@ -65,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.816"
-        app:srcCompat="@drawable/boton5FINAL" />
+        app:srcCompat="@drawable/boton5final" />
 
     <ImageButton
         android:id="@+id/BtnJoystick"
@@ -77,6 +77,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.222"
-        app:srcCompat="@drawable/boton1FINAL" />
+        app:srcCompat="@drawable/boton1final" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Grandapp" >
+        android:theme="@style/Theme.Grandapp"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.example.grandapp.Menu" />
         <activity android:name="com.example.grandapp.Login" />
         <activity android:name="com.example.grandapp.Registro" />
