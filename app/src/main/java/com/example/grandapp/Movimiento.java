@@ -2,6 +2,7 @@ package com.example.grandapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
@@ -38,7 +39,7 @@ public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnI
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean fueRestaurado) {
         if(!fueRestaurado){
-            YouTubePlayer.cueVideo("a01D1PzTVFc"); //https://www.youtube.com/watch?v=a01D1PzTVFc
+            youTubePlayer.cueVideo("a01D1PzTVFc"); //https://www.youtube.com/watch?v=a01D1PzTVFc
         }
     }
 
@@ -50,5 +51,14 @@ public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnI
             String Error="Error al inicializar youtube" + youTubeInitializationResult.toString();
             Toast.makeText(getApplication(), Error, Toast.LENGTH_SHORT).show();
         }
+    }
+    protected  void onActivityResult(int requestCode, int resultCode, Intent data){
+        if(resultCode==1){
+            getYoutubePlayerProvider().initialize(claveYoutube,this);
+        }
+    }
+
+    protected YouTubePlayer.Provider getYoutubePlayerProvider(){
+        return YouTubePlayerView;
     }
 }
