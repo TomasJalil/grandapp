@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     tools:context=".Movimiento">
-
+<com.google.android.youtube.player.YouTubePlayerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/youtube_view"
+    />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
