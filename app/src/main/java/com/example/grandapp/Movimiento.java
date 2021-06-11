@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -19,6 +20,7 @@ public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnI
     ArrayList<String> TemasLista;
     ArrayAdapter<String> Adaptador;
     YouTubePlayerView YouTubePlayerView;
+    String claveYoutube="AIzaSyCj4yWmuJsWcLWTDzOgh0V79qnGtxilTSc";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,16 +32,23 @@ public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnI
         ListaTemas=(Spinner)findViewById(R.id.lista);
         ListaTemas.setAdapter(Adaptador);
         YouTubePlayerView=(YouTubePlayerView)findViewById(R.id.youtube_view);
-
+       YouTubePlayerView.initialize(claveYoutube,this);
     }
 
     @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean fueRestaurado) {
+        if(!fueRestaurado){
+            YouTubePlayer.cueVideo("a01D1PzTVFc"); //https://www.youtube.com/watch?v=a01D1PzTVFc
+        }
     }
 
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-
+        if (youTubeInitializationResult.isUserRecoverableError()){
+            youTubeInitializationResult.getErrorDialog(this,1).show();
+        }else{
+            String Error="Error al inicializar youtube" + youTubeInitializationResult.toString();
+            Toast.makeText(getApplication(), Error, Toast.LENGTH_SHORT).show();
+        }
     }
 }
