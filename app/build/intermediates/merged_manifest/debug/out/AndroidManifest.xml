@@ -28,6 +28,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Grandapp"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.grandapp.Movimiento" />
         <activity android:name="com.example.grandapp.Menu" />
         <activity android:name="com.example.grandapp.Login" />
         <activity android:name="com.example.grandapp.Registro" />

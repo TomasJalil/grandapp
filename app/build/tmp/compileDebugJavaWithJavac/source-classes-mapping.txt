@@ -16,6 +16,8 @@ com/example/grandapp/BuildConfig.java
 com/example/grandapp/MainActivity.java
  com.example.grandapp.MainActivity
  com.example.grandapp.MainActivity$TareaAsincronica
+com/example/grandapp/Movimiento.java
+ com.example.grandapp.Movimiento
 com/example/grandapp/Publicacion.java
  com.example.grandapp.Publicacion
 com/example/grandapp/medicamentos.java

@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,12 +29,14 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
     Button IrRegistro, IrLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         IrLogin = findViewById(R.id.IrLgn);
         IrRegistro = findViewById(R.id.irRgstr);
+
         TareaAsincronica miTarea=new TareaAsincronica();
         miTarea.execute();
     }
@@ -70,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
        Intent intent = new Intent(this, Login.class);
        startActivity(intent);
    }
+
+
 }
 
 

@@ -1516,7 +1516,6 @@ id adjust_width
 id alertTitle
 id all
 id always
-id apiBtn
 id async
 id auto
 id barrier
@@ -1566,6 +1565,7 @@ id direct
 id disableHome
 id dropdown_menu
 id edit_query
+id edtTema
 id email
 id end
 id enterAlways
@@ -1595,6 +1595,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id irRgstr
@@ -1608,6 +1609,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lista
 id loginBtn
 id masked
 id message
@@ -1823,6 +1825,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_menu
+layout activity_movimiento
 layout activity_registro
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
