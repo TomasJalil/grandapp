@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\font_rhodium_libre.xml.flat",
         "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\font\\rhodium_libre.xml"
+    },
+    {
+        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
