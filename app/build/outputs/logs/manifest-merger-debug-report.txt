@@ -1,15 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\655dc37091b53a1d451eef0026f359d4\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\d7f60efe91dc50766e89efcb1d143ec0\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-analytics:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\7b9ba1454cb5ac3e64733e9e2c3a90eb\jetified-firebase-analytics-18.0.3\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:17:1-83:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\6115e061c96511d50753812d4de24f21\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations:16.3.5] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\1369485c689ceb8322c0628522befd57\jetified-firebase-installations-16.3.5\AndroidManifest.xml:2:1-24:12
@@ -65,29 +66,31 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\romin\.g
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\14431331b7f685f3bce78815fed9a8c3\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\e53fbbcf78ffb18c7cd795b35d4efb56\jetified-protolite-well-known-types-17.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\10a3513949333938587db48c8411373d\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
 		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:1-55:12
 		INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:10:5-66
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:22.1.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.5] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\1369485c689ceb8322c0628522befd57\jetified-firebase-installations-16.3.5\AndroidManifest.xml:11:5-67
@@ -99,9 +102,13 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.3] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\1ece422da7863d7daf37e6729c0a9d8d\jetified-play-services-measurement-sdk-api-18.0.3\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\1ece422da7863d7daf37e6729c0a9d8d\jetified-play-services-measurement-sdk-api-18.0.3\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:11:22-76
 application
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:7:5-30:19
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:14:5-53:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\d7f60efe91dc50766e89efcb1d143ec0\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -112,6 +119,8 @@ MERGED from [com.google.firebase:firebase-analytics:18.0.3] C:\Users\romin\.grad
 MERGED from [com.google.firebase:firebase-analytics:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\7b9ba1454cb5ac3e64733e9e2c3a90eb\jetified-firebase-analytics-18.0.3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:26:5-81:19
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:26:5-81:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\6115e061c96511d50753812d4de24f21\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:7:5-8:19
@@ -149,55 +158,67 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ro
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\acf285bdb061b554b0b237a51cb64393\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:17:9-41
 	android:roundIcon
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:13:9-46
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:20:9-46
 	android:usesCleartextTraffic
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:14:9-44
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:21:9-44
+meta-data#com.google.android.geo.API_KEY
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:31:9-33:55
+	android:value
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:32:13-58
+activity#com.example.grandapp.MapsActivity
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:35:9-37:68
+	android:label
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:37:13-56
+	android:name
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:36:13-41
 activity#com.example.grandapp.Movimiento
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:15:9-57
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:38:9-48
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:15:19-45
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:38:19-45
 activity#com.example.grandapp.Menu
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:16:9-42
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:39:9-42
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:16:19-39
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:39:19-39
 activity#com.example.grandapp.Login
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:17:9-43
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:40:9-43
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:17:19-40
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:40:19-40
 activity#com.example.grandapp.Registro
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:18:9-46
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:41:9-46
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:18:19-43
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:41:19-43
 activity#com.example.grandapp.MainActivity
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:19:19-47
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:42:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:46:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:27:9-29:57
+ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:50:9-52:57
 	android:resource
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:29:13-54
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:52:13-54
 	android:name
-		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:28:13-43
+		ADDED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml:51:13-43
 uses-sdk
 INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\romin\Documents\GitHub\grandapp\app\src\main\AndroidManifest.xml
@@ -214,6 +235,8 @@ MERGED from [com.google.firebase:firebase-analytics:18.0.3] C:\Users\romin\.grad
 MERGED from [com.google.firebase:firebase-analytics:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\7b9ba1454cb5ac3e64733e9e2c3a90eb\jetified-firebase-analytics-18.0.3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\6115e061c96511d50753812d4de24f21\jetified-firebase-auth-interop-19.0.2\AndroidManifest.xml:5:5-44
@@ -338,6 +361,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:22.1.2] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:16.3.5] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\1369485c689ceb8322c0628522befd57\jetified-firebase-installations-16.3.5\AndroidManifest.xml:10:5-79
@@ -444,6 +469,18 @@ ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:79:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:20.0.4] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\44fe79d2cac19c8ecaa9a4534eb1d52c\jetified-firebase-auth-20.0.4\AndroidManifest.xml:78:17-109
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\64be769a4812fd27bbba533c60fe5b7b\jetified-play-services-measurement-api-18.0.3\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:18.0.3] C:\Users\romin\.gradle\caches\transforms-2\files-2.1\e95842a214534440edcef5cce8409b37\jetified-play-services-measurement-18.0.3\AndroidManifest.xml:25:5-68

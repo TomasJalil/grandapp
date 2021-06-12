@@ -24,17 +24,211 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adec0177-df16-42de-9aa2-a31182eab535" name="Default Changelist" comment="">
+    <list default="true" id="adec0177-df16-42de-9aa2-a31182eab535" name="Default Changelist" comment="nose no le den bola">
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/android-developer-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/android-developer-docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/css/fullscreen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/css/less_source/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/customizations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/customizations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/design/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/doclava-developer-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/doclava-developer-docs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/doclava-developer-docs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/doclava-developer-reference.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/bg_fade.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/bg_gradient.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/bg_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/body-gradient-tab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/body-gradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/fullscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/grad-rule-qv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/hr_gray_main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/hr_gray_side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/icon_more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/icon_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/left_off.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/left_on.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/locale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/more_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/more_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/more_mid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/more_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/preliminary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/quicknav_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/quicknav_btn_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-eg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-s2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/resizable-sg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/right_off.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/right_on.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/sidenav-rule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/slide_off.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/slide_on.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/triangle-closed-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/triangle-closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/triangle-opened-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/images/triangle-opened.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/jquery-history.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/jquery-resizable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/js/docs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/js/global-libraries-combined.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/js/grid/960.gridder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/js/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/scroller/jquery.jscrollpane.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/scroller/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/search_autocomplete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/assets/triangle-none.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/navtree_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/_classes.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeApiServiceUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeBaseActivity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeInitializationResult.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeIntents.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.ErrorReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.OnFullscreenListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.OnInitializedListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.PlaybackEventListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.PlayerStateChangeListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.PlayerStyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.PlaylistEventListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.Provider.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayerFragment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayerSupportFragment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubePlayerView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeStandalonePlayer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeThumbnailLoader.ErrorReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeThumbnailLoader.OnThumbnailLoadedListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeThumbnailLoader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeThumbnailView.OnInitializedListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/YouTubeThumbnailView.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/com/google/android/youtube/player/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/hierarchy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/lists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/package-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/reference/packages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/timestamp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/libs/YouTubeAndroidPlayerApi.jar.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/proguard.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/drawable-mdpi/loading_thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/drawable-mdpi/no_thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout-land/fragments_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout-land/player_controls_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout-land/playerview_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/action_bar_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/demo_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/fragments_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/fullscreen_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/intents_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/player_controls_container.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/player_controls_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/playerview_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/standalone_player_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/video_list_demo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/layout/video_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/values-v11/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/values/constants.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/ActionBarDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/DeveloperKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/FragmentDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/FullscreenDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/IntentsDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/PlayerControlsDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/PlayerViewDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/StandalonePlayerDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/VideoListDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/VideoWallDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/YouTubeAPIDemoActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/YouTubeFailureRecoveryActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/adapter/DemoArrayAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/adapter/DemoListViewItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/ui/FlippingView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sample/src/com/examples/youtubeapidemo/ui/ImageWallView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2021_09_59__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2021_09_59__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2021_09_59__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_6_2021_09_59__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeNativeLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/out/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Login.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Login.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Menu.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Menu.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Registro.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Registro.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_movimiento.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_movimiento.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Movimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,17 +262,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\54112\Documents\GitHub\grandapp\app\src\main\res\drawable" />
+    </key>
     <key name="android.template.1279918332">
       <recent name="com.example.grandapp" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\melan\OneDrive\Documents\GitHub\grandapp\app\libs" />
     </key>
     <key name="android.template.371920811">
       <recent name="com.example.grandapp" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\54112\Documents\GitHub\grandapp\app\src\main\res\drawable" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\melan\OneDrive\Documents\GitHub\grandapp\app\libs" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,12 +368,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nose no le den bola" />
+    <option name="LAST_COMMIT_MESSAGE" value="nose no le den bola" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1623422214824">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1623514900064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1623422214824" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1623514900064" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619909586614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,24 +390,28 @@
     </state>
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1623419594365" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622719155073" />
-    <state width="1876" height="281" key="GridCell.Tab.0.bottom" timestamp="1623416110975">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1623448999636">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1876" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622757171278" />
     <state width="1876" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
-    <state width="1876" height="281" key="GridCell.Tab.0.center" timestamp="1623416110975">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1623448999636">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1876" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622757171278" />
     <state width="1876" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
-    <state width="1876" height="281" key="GridCell.Tab.0.left" timestamp="1623416110974">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1623448999636">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1876" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622757171278" />
     <state width="1876" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110974" />
-    <state width="1876" height="281" key="GridCell.Tab.0.right" timestamp="1623416110975">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1623448999636">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1876" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622757171278" />
     <state width="1876" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1622819483515">
@@ -219,11 +419,15 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622819483515" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619899597161" />
-    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623419609504">
+    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623442293113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1623419609504" />
+    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1623442293113" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621603220751" />
     <state x="769" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.0.1920.1040@0.40.1920.1040" timestamp="1621602383995" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1623514867613">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1623514867613" />
   </component>
 </project>

@@ -3,6 +3,8 @@ com/example/grandapp/publicaciones.java
 com/example/grandapp/Login.java
  com.example.grandapp.Login
  com.example.grandapp.Login$1
+com/example/grandapp/MapsActivity.java
+ com.example.grandapp.MapsActivity
 com/example/grandapp/Comentario.java
  com.example.grandapp.Comentario
 com/example/grandapp/TipoMed.java
@@ -22,6 +24,8 @@ com/example/grandapp/Publicacion.java
  com.example.grandapp.Publicacion
 com/example/grandapp/medicamentos.java
  com.example.grandapp.medicamentos
+com/example/grandapp/Video.java
+ com.example.grandapp.Video
 com/example/grandapp/UsuariosController.java
  com.example.grandapp.UsuariosController
 com/example/grandapp/comentarios.java

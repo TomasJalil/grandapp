@@ -18,28 +18,40 @@ import java.util.ArrayList;
 
 public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
     Spinner ListaTemas;
+    String VideoID;
     ArrayList<String> TemasLista;
+    ArrayList<Video> VideosLista;
     ArrayAdapter<String> Adaptador;
+    ArrayAdapter<Tema> AdaptadorVideos;
     YouTubePlayerView YouTubePlayerView;
+
     String claveYoutube="AIzaSyCj4yWmuJsWcLWTDzOgh0V79qnGtxilTSc";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movimiento);
         TemasLista=new ArrayList();
+        VideosLista=new ArrayList();
         Adaptador= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, TemasLista);
         Adaptador.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         Log.d("array", "" + Adaptador);
         ListaTemas=(Spinner)findViewById(R.id.lista);
         ListaTemas.setAdapter(Adaptador);
         YouTubePlayerView=(YouTubePlayerView)findViewById(R.id.youtube_view);
-       YouTubePlayerView.initialize(claveYoutube,this);
+        YouTubePlayerView.initialize(claveYoutube,this);
+       TemasLista.add("Yoga");
+        TemasLista.add("Meditacion");
+        TemasLista.add("Zumba");
+        TemasLista.add("Funcional");
+        TemasLista.add("Stretching");
+        TemasLista.add("Baile");
+
     }
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean fueRestaurado) {
         if(!fueRestaurado){
-            youTubePlayer.cueVideo("a01D1PzTVFc"); //https://www.youtube.com/watch?v=a01D1PzTVFc
+            youTubePlayer.cueVideo(VideoID); //https://www.youtube.com/watch?v=a01D1PzTVFc
         }
     }
 
@@ -61,4 +73,6 @@ public class Movimiento extends YouTubeBaseActivity implements YouTubePlayer.OnI
     protected YouTubePlayer.Provider getYoutubePlayerProvider(){
         return YouTubePlayerView;
     }
+
+
 }
