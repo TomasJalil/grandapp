@@ -36,34 +36,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         IrLogin = findViewById(R.id.IrLgn);
         IrRegistro = findViewById(R.id.irRgstr);
-
-        TareaAsincronica miTarea=new TareaAsincronica();
-        miTarea.execute();
     }
 
-        public class TareaAsincronica extends AsyncTask<Void,Void,Void> {
-            @Override
-            protected Void doInBackground(Void... voids) {
-                try {
-                    URL miRuta = new URL(" http://epok.buenosaires.gob.ar/getCategorias%22");
-                            HttpURLConnection miConexion = (HttpURLConnection) miRuta.openConnection();
-                            Log.d("AccesoAPI","Me conecto");
-                    if (miConexion.getResponseCode() == 200) {
 
-                        Log.d("AccesoAPI", "todo perfecto");
-                        InputStream cuerpoRespuesta = miConexion.getInputStream();
-                        InputStreamReader respLeida = new InputStreamReader(cuerpoRespuesta, "UTF-8");
-                        }
-                    else {
-                        Log.d("AccesoAPI","Error en la conexion");
-                    }
-                    miConexion.disconnect();
-                } catch (Exception error) {
-                    Log.d("PresionoBoton", "no se creo una URL" + error.getMessage());
-                }
-                return null;
-            }
-        }
 
    public void irRegistro(View view){
        Intent intent = new Intent(this, Registro.class);

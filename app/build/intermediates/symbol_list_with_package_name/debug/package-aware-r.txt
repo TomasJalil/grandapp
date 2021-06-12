@@ -1482,6 +1482,7 @@ id SHIFT
 id SYM
 id TOP_END
 id TOP_START
+id TituloVideo
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1856,7 +1857,9 @@ layout activity_main
 layout activity_maps
 layout activity_menu
 layout activity_movimiento
+layout activity_movimiento_elegido
 layout activity_registro
+layout activity_video_elegido
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
