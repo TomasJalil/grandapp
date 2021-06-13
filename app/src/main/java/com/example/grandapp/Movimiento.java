@@ -24,8 +24,9 @@ public class Movimiento extends AppCompatActivity {
     Spinner ListaTemas;
     ArrayList<String> TemasLista;
     ArrayList<Video> VideosLista;
-    ArrayAdapter<String> Adaptador;
+    ArrayAdapter<CharSequence> Adaptador;
     ArrayAdapter<Tema> AdaptadorVideos;
+    String TemaSeleccionado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,28 +34,29 @@ public class Movimiento extends AppCompatActivity {
         setContentView(R.layout.activity_movimiento);
         TemasLista = new ArrayList();
         VideosLista = new ArrayList();
-        Adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, TemasLista);
-        Adaptador.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        Adaptador = ArrayAdapter.createFromResource(this,R.array.Temas, android.R.layout.simple_spinner_item);
+        Adaptador.setDropDownViewResource(android.R.layout.simple_spinner_item);
         Log.d("array", "" + Adaptador);
         ListaTemas = findViewById(R.id.lista);
         ListaTemas.setAdapter(Adaptador);
-        ListaTemas.setOnItemClickListener(escuchadorParaListViewNombre);
-        TemasLista.add("Yoga");
-        TemasLista.add("Meditacion");
-        TemasLista.add("Zumba");
-        TemasLista.add("Funcional");
-        TemasLista.add("Stretching");
-        TemasLista.add("Baile");
-}
-    AdapterView.OnItemClickListener escuchadorParaListViewNombre=new AdapterView.OnItemClickListener() {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int posicionSeleccionada, long l) {
-            posicionSeleccionada=ListaTemas.getSelectedItemPosition();
 
-            String TextoSeleccionado;
-            TextoSeleccionado= ListaTemas.getItemAtPosition(posicionSeleccionada).toString();
-            Log.d("Posicion",TextoSeleccionado);
-        }
-    };
+     ListaTemas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+         @Override
+         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+             TemaSeleccionado=parent.getItemAtPosition(position).toString();
+             if (!TemaSeleccionado.equals("Elige tu tema")){
+                 Log.d("Spinner","Seleccionado: "+TemaSeleccionado) ;
+
+             }
+
+         }
+
+         @Override
+         public void onNothingSelected(AdapterView<?> parent) {
+
+         }
+     });
+}
+
 
 }
