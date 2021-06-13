@@ -47,6 +47,15 @@ public class Movimiento extends AppCompatActivity {
              if (!TemaSeleccionado.equals("Elige tu tema")){
                  Log.d("Spinner","Seleccionado: "+TemaSeleccionado) ;
 
+                 Bundle PaqueteDeDatos;
+                 PaqueteDeDatos=new Bundle();
+                 PaqueteDeDatos.putString("Tema",TemaSeleccionado);
+
+                 Intent i = new Intent(Movimiento.this, MovimientoElegido.class);
+                 i.putExtras(PaqueteDeDatos);
+                     startActivity(i);
+
+
              }
 
          }
