@@ -22,7 +22,7 @@ public class VideoElegido extends YouTubeBaseActivity implements YouTubePlayer.O
     ArrayList<String> TemasLista;
     ArrayList<Video> VideosLista;
     ArrayAdapter<String> Adaptador;
-    ArrayAdapter<Tema> AdaptadorVideos;
+
     com.google.android.youtube.player.YouTubePlayerView YouTubePlayerView;
 
     String claveYoutube="AIzaSyCj4yWmuJsWcLWTDzOgh0V79qnGtxilTSc";
