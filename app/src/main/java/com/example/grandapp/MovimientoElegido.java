@@ -47,7 +47,7 @@ public class MovimientoElegido extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
 
             try {
-                String url = ("localhost:5000/videos/:idTema");
+                String url = ("http://localhost:5001/API/videos/:idTema");
                 Log.d("url", "doInBackground:Url y NombreCta " + url);
                 URL miRuta = new URL(url);
                 HttpURLConnection miConexion = (HttpURLConnection) miRuta.openConnection();
@@ -82,18 +82,32 @@ public class MovimientoElegido extends AppCompatActivity {
             JsonArray VideoLista;
             objetoJson = ProcesadorDeJson.parse(respLeidaNombre).getAsJsonObject();
             VideoLista = objetoJson.get("video").getAsJsonArray();
+            VideoLista=cargarArray(VideoLista);
             TareaAsincronicaYoutube Lectura;
-            Lectura = new TareaAsincronicaYoutube();
+            Lectura = new TareaAsincronicaYoutube(VideoLista);
             Lectura.execute();
 
+
+        }
+        public JsonArray cargarArray(JsonArray VideoLista) {
+            String url;
+            for (int x = 0; x < VideoLista.size(); x++) {
+                JsonObject unaCategoria = VideoLista.get(x).getAsJsonObject();
+
+                url = unaCategoria.get("video").getAsString();
+                VideoLista.add(url);
+
+            }
+            return VideoLista;
         }
 
-        private class TareaAsincronicaYoutube extends AsyncTask<Void, Void, Void> {
+
+        private class TareaAsincronicaYoutube extends AsyncTask<JsonArray, Void, Void> {
             @Override
-            protected Void doInBackground(Void... voids) {
+            protected Void doInBackground(JsonArray Videolista) {
 
                 try {
-                    String url = ("localhost:5000/videos/:idTema");
+                    String url = ("https://www.googleapis.com/youtube/v3/search?q="+Videolista+"&key=AIzaSyCj4yWmuJsWcLWTDzOgh0V79qnGtxilTSc&part=snippet&type=video");
                     Log.d("url", "doInBackground:Url y NombreCta " + url);
                     URL miRuta = new URL(url);
                     HttpURLConnection miConexion = (HttpURLConnection) miRuta.openConnection();
@@ -125,11 +139,11 @@ public class MovimientoElegido extends AppCompatActivity {
             String foto,descripcion,titulo;
             for (int x = 0; x < VideoLista.size(); x++) {
                 JsonObject unaCategoria = VideoLista.get(x).getAsJsonObject();
-                foto = unaCategoria.get("foto").getAsString();
-                descripcion = unaCategoria.get("descripcion").getAsString();
-                titulo = unaCategoria.get("titulo").getAsString();
+                foto = unaCategoria.get("thumnail").getAsString();
+                descripcion = unaCategoria.get("descripyion").getAsString();
+                titulo = unaCategoria.get("title").getAsString();
 
-                VideosLista.add(new Video(idTema, tema));
+                VideosLista.add(new Video(foto,descripcion,titulo,url));
 
             }
 

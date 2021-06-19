@@ -80,7 +80,7 @@ public class Movimiento extends AppCompatActivity {
         protected Void doInBackground(Void... voids) {
 
             try {
-                String url = ("localhost:5000/temas");
+                String url = ("http://localhost:5001/API/temas");
                 Log.d("url", "doInBackground:Url y NombreCta " + url);
                 URL miRuta = new URL(url);
                 HttpURLConnection miConexion = (HttpURLConnection) miRuta.openConnection();
