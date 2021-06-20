@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
+import com.google.android.youtube.player.internal.v;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -23,6 +25,7 @@ import com.google.gson.JsonParser;
 import java.io.Console;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -32,108 +35,143 @@ public class Movimiento extends AppCompatActivity {
     Spinner ListaTemas;
     ArrayList<Tema> TemasLista;
     ArrayAdapter<Tema> Adaptador;
-    String TemaSeleccionado;
+    Button Tema1,Tema2,Tema3,Tema4,Tema5,Tema6;
+    private Bundle PaqueteDeDatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movimiento);
+        Tema1=findViewById(R.id.tema1);
+        Tema2=findViewById(R.id.tema2);
+        Tema3=findViewById(R.id.tema3);
+        Tema4=findViewById(R.id.tema4);
+        Tema5=findViewById(R.id.tema5);
+        Tema6=findViewById(R.id.tema6);
         TemasLista = new ArrayList<>();
-        Adaptador = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, TemasLista);
-        Adaptador.setDropDownViewResource(android.R.layout.simple_spinner_item);
-        Log.d("array", "" + Adaptador);
-        ListaTemas = findViewById(R.id.lista);
-        ListaTemas.setAdapter(Adaptador);
         TareaAsincronicaTema LecturaTemas;
         LecturaTemas = new TareaAsincronicaTema();
         LecturaTemas.execute();
 
-     ListaTemas.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-         @Override
-         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-             TemaSeleccionado=parent.getItemAtPosition(position).toString();
-             if (!TemaSeleccionado.equals("Elige tu tema")){
-                 Log.d("Spinner","Seleccionado: "+TemaSeleccionado) ;
 
-                 Bundle PaqueteDeDatos;
-                 PaqueteDeDatos=new Bundle();
-                 PaqueteDeDatos.putString("Tema",TemaSeleccionado);
-
-                 Intent i = new Intent(Movimiento.this, MovimientoElegido.class);
-                 i.putExtras(PaqueteDeDatos);
-                     startActivity(i);
-
-
-             }
-
-         }
-
-         @Override
-         public void onNothingSelected(AdapterView<?> parent) {
-
-         }
-     });
 
 }
+
     private class TareaAsincronicaTema extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
 
             try {
-                String url = ("http://localhost:5001/API/temas");
-                Log.d("url", "doInBackground:Url y NombreCta " + url);
-                URL miRuta = new URL(url);
+                URL miRuta = new URL("http://10.0.2.2:5000/API/temas" );
                 HttpURLConnection miConexion = (HttpURLConnection) miRuta.openConnection();
+
                 if (miConexion.getResponseCode() == 200) {
 
-                    InputStream cuerpoRespuesta = miConexion.getInputStream();
-                    InputStreamReader respLeidaNombre = new InputStreamReader(cuerpoRespuesta, "UTF-8");
-                    ProcesarJsonLeidoNombres(respLeidaNombre);
+                    InputStream RespuestaTemas = miConexion.getInputStream();
+                    InputStreamReader JSonCrudoTemas = new InputStreamReader(RespuestaTemas, "UTF-8");
+                    ProcesarJsonLeidoTemas(JSonCrudoTemas);
+                } else {
+                    Log.d("AccesoAPI", "Error en la conexion");
                 }
+                miConexion.disconnect();
             } catch (Exception error) {
-                Log.d("PresionoBoton", "no se creo una URL" + error.getMessage());
+                Log.d("AccesoAPI", "Hubo error al conectarme: " + error.getMessage());
             }
             return null;
         }
 
+    }
 
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
+    public void ProcesarJsonLeidoTemas(InputStreamReader JSonCrudoTemas){
+        Log.d("Antes obj","No se convierte en json object");
 
-            ListaTemas.setAdapter(Adaptador);
-            Adaptador.notifyDataSetChanged();
+        JsonParser parseadorDeJSon;
+        parseadorDeJSon=new JsonParser();
+        JsonArray objJsonCrudo;
+        objJsonCrudo=parseadorDeJSon.parse(JSonCrudoTemas).getAsJsonArray();
+        Integer IdTema;
+        String Nombre;
+        Log.d("Antes for","No entra al for");
+        for (int i=0;i<=5;i++){
+            JsonObject objUnaInstancia;
+            objUnaInstancia=objJsonCrudo.get(i).getAsJsonObject();
+            Nombre=objUnaInstancia.get("nombre").getAsString();
+            IdTema=objUnaInstancia.get("idTema").getAsInt();
 
-            Log.d("postExecute", "onpost eexecute bien");
+            Log.d("AccesoAPI",""+Nombre+IdTema);
+            TemasLista.add(new Tema(IdTema,Nombre));
         }
+        Tema1.setText(TemasLista.get(0).getNombre());
+        Tema2.setText(TemasLista.get(1).getNombre());
+        Tema3.setText(TemasLista.get(2).getNombre());
+        Tema4.setText(TemasLista.get(3).getNombre());
+        Tema5.setText(TemasLista.get(4).getNombre());
+        Tema6.setText(TemasLista.get(5).getNombre());
+
     }
+    public void onClick(View v){
+        if (v.getId() == R.id.tema1){
+            Integer x=0;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
 
-    public void cargarLista(JsonArray TemasListas) {
-      String tema;
-      Integer idTema;
-        for (int x = 0; x < TemasListas.size(); x++) {
-            JsonObject unaCategoria = TemasListas.get(x).getAsJsonObject();
-            tema = unaCategoria.get("nombreTema").getAsString();
-            idTema=unaCategoria.get("idTema").getAsInt();
-            Log.d("jsonobjectlista2", "nombre categoria ");
-
-            TemasLista.add(new Tema(idTema,tema));
 
         }
+        if (v.getId() == R.id.tema2){
+            Integer x=1;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.tema3){
+            Integer x=2;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.tema4){
+            Integer x=3;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.tema5){
+            Integer x=4;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
+        }
+        if (v.getId() == R.id.tema6){
+            Integer x=5;
+            Bundle PaqueteDeDatos;
+            PaqueteDeDatos=new Bundle();
+            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
+            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
+            i.putExtras(PaqueteDeDatos);
+            startActivity(i);
+        }
+
+
+
+
+
 
     }
-
-    public void ProcesarJsonLeidoNombres(InputStreamReader respLeidaNombre) {
-        Log.d("andaprocesar", "ProcesarJsonLeidoNombres: ");
-        JsonParser ProcesadorDeJson;
-        ProcesadorDeJson = new JsonParser();
-        JsonObject objetoJson;
-        JsonArray TemasListas;
-        objetoJson = ProcesadorDeJson.parse(respLeidaNombre).getAsJsonObject();
-        TemasListas= objetoJson.get("nombre").getAsJsonArray();
-        cargarLista(TemasListas);
     }
 
-
-
-}
