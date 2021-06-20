@@ -35,7 +35,6 @@ public class VideoElegido extends YouTubeBaseActivity implements YouTubePlayer.O
         Adaptador= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, TemasLista);
         Adaptador.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         Log.d("array", "" + Adaptador);
-        ListaTemas=(Spinner)findViewById(R.id.lista);
         ListaTemas.setAdapter(Adaptador);
         YouTubePlayerView=(YouTubePlayerView)findViewById(R.id.youtube_view);
         YouTubePlayerView.initialize(claveYoutube,this);

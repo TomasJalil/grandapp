@@ -2,9 +2,10 @@ package com.example.grandapp;
 
 import com.google.gson.JsonObject;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Tema {
+public class Tema implements Serializable {
     private int IdTema;
     private String Nombre;
 
