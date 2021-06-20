@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +26,7 @@ import com.google.gson.JsonParser;
 import java.io.Console;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -32,7 +34,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Movimiento extends AppCompatActivity {
-    Spinner ListaTemas;
     ArrayList<Tema> TemasLista;
     ArrayAdapter<Tema> Adaptador;
     Button Tema1,Tema2,Tema3,Tema4,Tema5,Tema6;
@@ -49,8 +50,8 @@ public class Movimiento extends AppCompatActivity {
         Tema5=findViewById(R.id.tema5);
         Tema6=findViewById(R.id.tema6);
         TemasLista = new ArrayList<>();
-        TareaAsincronicaTema LecturaTemas;
-        LecturaTemas = new TareaAsincronicaTema();
+
+        TareaAsincronicaTema LecturaTemas = new TareaAsincronicaTema();
         LecturaTemas.execute();
 
 
@@ -112,59 +113,41 @@ public class Movimiento extends AppCompatActivity {
     public void onClick(View v){
         if (v.getId() == R.id.tema1){
             Integer x=0;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
-
+           Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
 
         }
         if (v.getId() == R.id.tema2){
             Integer x=1;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
+            Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
+
         }
         if (v.getId() == R.id.tema3){
             Integer x=2;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
+            Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
         }
         if (v.getId() == R.id.tema4){
             Integer x=3;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
+            Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
         }
         if (v.getId() == R.id.tema5){
             Integer x=4;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
+            Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
         }
         if (v.getId() == R.id.tema6){
             Integer x=5;
-            Bundle PaqueteDeDatos;
-            PaqueteDeDatos=new Bundle();
-            PaqueteDeDatos.putSerializable("Tema",TemasLista.get(x));
-            Intent i = new Intent(getApplicationContext(), MovimientoElegido.class);
-            i.putExtras(PaqueteDeDatos);
-            startActivity(i);
+            Intent intent = new Intent(Movimiento.this,MovimientoElegido.class);
+            intent.putExtra("ArrayList", TemasLista.get(x));
+            startActivity(intent);
         }
 
 

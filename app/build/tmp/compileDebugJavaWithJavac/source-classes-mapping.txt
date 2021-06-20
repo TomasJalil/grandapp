@@ -14,8 +14,8 @@ com/example/grandapp/Comentario.java
  com.example.grandapp.Comentario
 com/example/grandapp/TipoMed.java
  com.example.grandapp.TipoMed
-com/example/grandapp/Tema.java
- com.example.grandapp.Tema
+com/example/grandapp/comentarios.java
+ com.example.grandapp.comentarios
 com/example/grandapp/Usuarios.java
  com.example.grandapp.Usuarios
 com/example/grandapp/BuildConfig.java
@@ -32,12 +32,15 @@ com/example/grandapp/Video.java
  com.example.grandapp.Video
 com/example/grandapp/UsuariosController.java
  com.example.grandapp.UsuariosController
-com/example/grandapp/comentarios.java
- com.example.grandapp.comentarios
+com/example/grandapp/Tema.java
+ com.example.grandapp.Tema
+ com.example.grandapp.Tema$1
 com/example/grandapp/Menu.java
  com.example.grandapp.Menu
 com/example/grandapp/MovimientoElegido.java
  com.example.grandapp.MovimientoElegido
+ com.example.grandapp.MovimientoElegido$1
+ com.example.grandapp.MovimientoElegido$TareaAsincronicaVideos
 com/example/grandapp/Movimiento.java
  com.example.grandapp.Movimiento
  com.example.grandapp.Movimiento$1

@@ -6,55 +6,33 @@ public class Video {
     String Foto;
     String Descripcion;
     String Titulo;
-  String UrlVideo;
-    int CantVistas;
-   public Video (String foto,String tema,String descripcion,String titulo,String UrlVideo,int cantVistas){
-       this.Foto=foto;
-       this.Descripcion=descripcion;
-       this.Titulo=titulo;
-       this.UrlVideo=UrlVideo;
-       this.CantVistas=cantVistas;
-   }
-   public String getUrl(String urlVideo){
-       this.UrlVideo=urlVideo;
-    return UrlVideo;
-   }
-   public String getTitulo(String titulo){
-       this.Titulo=titulo;
-       return Titulo;
-   }
-    public String getFoto(String foto){
-        this.Foto=foto;
-        return Foto;
+    String IdVideo;
+
+    public String getIdVideo(){return IdVideo;}
+    public void setIdVideo(String idVideo) {
+        IdVideo = idVideo;
     }
-    public String getDescripcion(String descripcion){
-        this.Descripcion=descripcion;
-        return Descripcion;
-    }
-    public Integer getCantVisitas(Integer cantVistas){
-        this.CantVistas=cantVistas;
-        return CantVistas;
-    }
+
+    public String getTitulo(){return Titulo;}
+    public void setTitulo(String titulo) {Titulo = titulo;}
+
+    public String getFoto(){return Foto;}
     public void setFoto(String foto) {
         Foto = foto;
     }
+
+    public String getDescripcion(){return Descripcion;}
     public void setDescripcion(String descripcion) {
         Descripcion = descripcion;
     }
-    public void setTitulo(String titulo) {
-        Titulo = titulo;
-    }
-    public void setUrlVideo(String urlVideo) {
-        UrlVideo = urlVideo;
-    }
-    public void setCantVistas(Integer cantVisitas) {
-        CantVistas = cantVisitas;
-    }
-    public Video( String foto,String descripcion, String titulo, String urlVideo) {
+
+
+    public Video( String foto,String descripcion, String titulo, String idVideo) {
+        setIdVideo(idVideo);
         setFoto( foto);
         setDescripcion( descripcion);
         setTitulo( titulo);
-        setUrlVideo(urlVideo);
+
 
 
 

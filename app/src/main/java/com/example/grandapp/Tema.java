@@ -1,11 +1,17 @@
 package com.example.grandapp;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import com.google.gson.JsonObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
-public class Tema implements Serializable {
+public class Tema implements Parcelable {
     private int IdTema;
     private String Nombre;
 
@@ -29,7 +35,33 @@ public class Tema implements Serializable {
         setId(idTema);
         setNombre(nombre);
     }
+    protected Tema(Parcel in) {
+        IdTema = in.readInt();
+        Nombre = in.readString();
+    }
+
+    public static final Creator<Tema> CREATOR = new Creator<Tema>() {
+        @Override
+        public Tema createFromParcel(Parcel in) {
+            return new Tema(in);
+        }
+
+        @Override
+        public Tema[] newArray(int size) {
+            return new Tema[size];
+        }
+    };
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(IdTema);
+        dest.writeString(Nombre);
+    }
 }
 
