@@ -29,14 +29,14 @@ com/example/grandapp/Publicacion.java
  com.example.grandapp.Publicacion
 com/example/grandapp/medicamentos.java
  com.example.grandapp.medicamentos
-com/example/grandapp/MedicamentoXusuario.java
- com.example.grandapp.MedicamentoXusuario
+com/example/grandapp/Video.java
+ com.example.grandapp.Video
 com/example/grandapp/UsuariosController.java
  com.example.grandapp.UsuariosController
 com/example/grandapp/comentarios.java
  com.example.grandapp.comentarios
-com/example/grandapp/Video.java
- com.example.grandapp.Video
+com/example/grandapp/MedicamentoXusuario.java
+ com.example.grandapp.MedicamentoXusuario
 com/example/grandapp/MovimientoElegido.java
  com.example.grandapp.MovimientoElegido
  com.example.grandapp.MovimientoElegido$1
