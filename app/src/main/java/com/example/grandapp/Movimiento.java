@@ -35,9 +35,7 @@ import java.util.List;
 
 public class Movimiento extends AppCompatActivity {
     ArrayList<Tema> TemasLista;
-    ArrayAdapter<Tema> Adaptador;
     Button Tema1,Tema2,Tema3,Tema4,Tema5,Tema6;
-    private Bundle PaqueteDeDatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

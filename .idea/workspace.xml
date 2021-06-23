@@ -41,13 +41,13 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento$TareaAsincronicaTema.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento$TareaAsincronicaTema.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Movimiento.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MovimientoElegido$TareaAsincronicaVideos.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MovimientoElegido$TareaAsincronicaVideos.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MovimientoElegido.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/MovimientoElegido.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Tema.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Tema.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Video.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/grandapp/Video.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Movimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Movimiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/MovimientoElegido.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/MovimientoElegido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Tema.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Tema.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Video.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +55,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,6 +80,7 @@
         <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="navigationResourceFile" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,11 +115,6 @@
     <key name="android.template.122370282">
       <recent name="com.example.grandapp" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\45748937\Documents\GitHub\grandapp\app\libs" />
-      <recent name="C:\Users\45748937\Documents\GitHub\grandapp\app" />
-      <recent name="C:\Users\54112\Documents\GitHub\grandapp\app\src\main\res\drawable" />
-    </key>
     <key name="android.template.1279918332">
       <recent name="com.example.grandapp" />
     </key>
@@ -115,6 +123,11 @@
     </key>
     <key name="android.template.-90500795">
       <recent name="com.example.grandapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\45748937\Documents\GitHub\grandapp\app\libs" />
+      <recent name="C:\Users\45748937\Documents\GitHub\grandapp\app" />
+      <recent name="C:\Users\54112\Documents\GitHub\grandapp\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,11 +227,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="nose no le den bola" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1624202266102">
+    <state x="686" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1624426634199">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1623514900064" />
-    <state x="686" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624202266102" />
+    <state x="686" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624426634199" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623541463551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -239,34 +252,50 @@
     </state>
     <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1624020391932" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623525116218" />
-    <state width="1876" height="400" key="GridCell.Tab.0.bottom" timestamp="1624204831625">
+    <state width="1876" height="281" key="GridCell.Tab.0.bottom" timestamp="1624428462196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1396" height="281" key="GridCell.Tab.0.bottom/0.0.1440.1040/1440.0.1920.1040@0.0.1440.1040" timestamp="1623605010360" />
-    <state width="1876" height="400" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624204831625" />
+    <state width="1876" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462196" />
     <state width="1876" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
-    <state width="1876" height="400" key="GridCell.Tab.0.center" timestamp="1624204831625">
+    <state width="1876" height="281" key="GridCell.Tab.0.center" timestamp="1624428462196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1396" height="281" key="GridCell.Tab.0.center/0.0.1440.1040/1440.0.1920.1040@0.0.1440.1040" timestamp="1623605010360" />
-    <state width="1876" height="400" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624204831625" />
+    <state width="1876" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462196" />
     <state width="1876" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
-    <state width="1876" height="400" key="GridCell.Tab.0.left" timestamp="1624204831625">
+    <state width="1876" height="281" key="GridCell.Tab.0.left" timestamp="1624428462196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1396" height="281" key="GridCell.Tab.0.left/0.0.1440.1040/1440.0.1920.1040@0.0.1440.1040" timestamp="1623605010360" />
-    <state width="1876" height="400" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624204831625" />
+    <state width="1876" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462196" />
     <state width="1876" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110974" />
-    <state width="1876" height="400" key="GridCell.Tab.0.right" timestamp="1624204831625">
+    <state width="1876" height="281" key="GridCell.Tab.0.right" timestamp="1624428462196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1623448999636" />
     <state width="1396" height="281" key="GridCell.Tab.0.right/0.0.1440.1040/1440.0.1920.1040@0.0.1440.1040" timestamp="1623605010360" />
-    <state width="1876" height="400" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624204831625" />
+    <state width="1876" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462196" />
     <state width="1876" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623416110975" />
+    <state width="1876" height="281" key="GridCell.Tab.1.bottom" timestamp="1624428462197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462197" />
+    <state width="1876" height="281" key="GridCell.Tab.1.center" timestamp="1624428462197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="281" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462197" />
+    <state width="1876" height="281" key="GridCell.Tab.1.left" timestamp="1624428462197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="281" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462197" />
+    <state width="1876" height="281" key="GridCell.Tab.1.right" timestamp="1624428462197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="281" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624428462197" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1622819483515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
