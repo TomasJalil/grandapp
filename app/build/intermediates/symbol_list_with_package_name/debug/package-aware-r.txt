@@ -110,6 +110,7 @@ attr argType
 attr arrowHeadLength
 attr arrowShaftLength
 attr autoCompleteTextViewStyle
+attr autoPlay
 attr autoSizeMaxTextSize
 attr autoSizeMinTextSize
 attr autoSizePresetSizes
@@ -325,6 +326,8 @@ attr elevation
 attr elevationOverlayColor
 attr elevationOverlayEnabled
 attr emptyVisibility
+attr enableAutomaticInitialization
+attr enableLiveVideoUi
 attr endIconCheckable
 attr endIconContentDescription
 attr endIconDrawable
@@ -375,6 +378,7 @@ attr fontProviderFetchStrategy
 attr fontProviderFetchTimeout
 attr fontProviderPackage
 attr fontProviderQuery
+attr fontSize
 attr fontStyle
 attr fontVariationSettings
 attr fontWeight
@@ -382,6 +386,7 @@ attr foregroundInsidePadding
 attr gapBetweenBars
 attr goIcon
 attr graph
+attr handleNetworkEvents
 attr headerLayout
 attr height
 attr helperText
@@ -620,9 +625,14 @@ attr shapeAppearanceOverlay
 attr shapeAppearanceSmallComponent
 attr showAsAction
 attr showDividers
+attr showFullScreenButton
 attr showMotionSpec
+attr showSeekBar
 attr showText
 attr showTitle
+attr showVideoCurrentTime
+attr showVideoDuration
+attr showYouTubeButton
 attr shrinkMotionSpec
 attr singleChoiceItemLayout
 attr singleLine
@@ -764,6 +774,8 @@ attr uri
 attr useCompatPadding
 attr useMaterialThemeColors
 attr useViewLifecycle
+attr useWebUi
+attr videoId
 attr viewInflaterClass
 attr voiceIcon
 attr windowActionBar
@@ -810,6 +822,11 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color ayp_drop_shadow
+color ayp_item_selected
+color ayp_menu_icons
+color ayp_menu_text
+color ayp_red
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1077,6 +1094,11 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen ayp_12sp
+dimen ayp_8dp
+dimen ayp_menu_dialog_container_margin
+dimen ayp_menu_item_padding
+dimen ayp_menu_item_text_size
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
@@ -1417,6 +1439,16 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable ayp_background_item_selected
+drawable ayp_drop_shadow_bottom
+drawable ayp_drop_shadow_top
+drawable ayp_ic_fullscreen_24dp
+drawable ayp_ic_fullscreen_exit_24dp
+drawable ayp_ic_menu_24dp
+drawable ayp_ic_pause_36dp
+drawable ayp_ic_play_36dp
+drawable ayp_ic_youtube_24dp
+drawable ayp_shape_rounded_corners
 drawable boton1final
 drawable boton2final
 drawable boton3final
@@ -1618,9 +1650,12 @@ id confirm_button
 id container
 id content
 id contentPanel
+id controls_container
 id coordinator
 id custom
 id customPanel
+id custom_action_left_button
+id custom_action_right_button
 id cut
 id dark
 id date_picker_actions
@@ -1635,6 +1670,8 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id drop_shadow_bottom
+id drop_shadow_top
 id dropdown_menu
 id edit_query
 id email
@@ -1645,6 +1682,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id extra_views_container
 id fade
 id fill
 id fill_horizontal
@@ -1655,6 +1693,7 @@ id fitToContents
 id fixed
 id forever
 id fragment_container_view_tag
+id fullscreen_button
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1683,10 +1722,13 @@ id line1
 id line3
 id listMode
 id list_item
+id live_video_indicator
 id loginBtn
 id map
 id masked
 id media_actions
+id menu_button
+id menu_root
 id message
 id middle
 id mini
@@ -1731,6 +1773,7 @@ id off
 id on
 id outline
 id packed
+id panel
 id parallax
 id parent
 id parentPanel
@@ -1739,9 +1782,12 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id play_pause_button
+id progress
 id progress_circular
 id progress_horizontal
 id radio
+id recycler_view
 id registroBtn
 id right
 id right_icon
@@ -1842,6 +1888,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id video_title
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1849,7 +1896,9 @@ id wide
 id withText
 id wrap
 id wrap_content
-id youtube_view
+id youtube_button
+id youtube_player_seekbar
+id youtube_player_view
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1920,6 +1969,10 @@ layout activity_movimiento
 layout activity_movimiento_elegido
 layout activity_registro
 layout activity_video_elegido
+layout ayp_default_player_ui
+layout ayp_empty_layout
+layout ayp_menu_item
+layout ayp_player_menu
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -2000,6 +2053,7 @@ layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw ayp_youtube_player
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2029,6 +2083,13 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string ayp_custom_action_left
+string ayp_custom_action_right
+string ayp_full_screen_button
+string ayp_live
+string ayp_null_time
+string ayp_open_video_in_youtube
+string ayp_play_button
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -2895,6 +2956,8 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable YouTubePlayerSeekBar color fontSize
+styleable YouTubePlayerView autoPlay enableAutomaticInitialization enableLiveVideoUi handleNetworkEvents showFullScreenButton showSeekBar showVideoCurrentTime showVideoDuration showYouTubeButton useWebUi videoId
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

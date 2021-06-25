@@ -33,7 +33,6 @@ public class Login extends AppCompatActivity {
         EditPass = findViewById(R.id.Pass);
         EditEmail = findViewById(R.id.email);
         BtnRegistro=findViewById(R.id.loginBtn);
-
         mAuth = FirebaseAuth.getInstance();
     }
     public void onStart() {

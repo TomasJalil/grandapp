@@ -4,74 +4,57 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.Toast;
+import android.widget.TextView;
 
-import com.google.android.youtube.player.YouTubeBaseActivity;
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerView;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerFullScreenListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
-import java.util.ArrayList;
+public class VideoElegido extends AppCompatActivity {
 
-public class VideoElegido extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
-    Spinner ListaTemas;
-    String VideoID;
-    ArrayList<String> TemasLista;
-    ArrayList<Video> VideosLista;
-    ArrayAdapter<String> Adaptador;
-
-    com.google.android.youtube.player.YouTubePlayerView YouTubePlayerView;
-
-    String claveYoutube="AIzaSyCj4yWmuJsWcLWTDzOgh0V79qnGtxilTSc";
+TextView TituloVideo;
+Video ListaVideos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movimiento);
-        TemasLista=new ArrayList();
-        VideosLista=new ArrayList();
-        Adaptador= new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, TemasLista);
-        Adaptador.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-        Log.d("array", "" + Adaptador);
-        ListaTemas.setAdapter(Adaptador);
-        YouTubePlayerView=(YouTubePlayerView)findViewById(R.id.youtube_view);
-        YouTubePlayerView.initialize(claveYoutube,this);
-        TemasLista.add("Yoga");
-        TemasLista.add("Meditacion");
-        TemasLista.add("Zumba");
-        TemasLista.add("Funcional");
-        TemasLista.add("Stretching");
-        TemasLista.add("Baile");
-
-    }
-
-    @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean fueRestaurado) {
-        if(!fueRestaurado){
-            youTubePlayer.cueVideo(VideoID); //https://www.youtube.com/watch?v=a01D1PzTVFc
-        }
-    }
-
-    @Override
-    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-        if (youTubeInitializationResult.isUserRecoverableError()){
-            youTubeInitializationResult.getErrorDialog(this,1).show();
-        }else{
-            String Error="Error al inicializar youtube" + youTubeInitializationResult.toString();
-            Toast.makeText(getApplication(), Error, Toast.LENGTH_SHORT).show();
-        }
-    }
-    protected  void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(resultCode==1){
-            getYoutubePlayerProvider().initialize(claveYoutube,this);
-        }
-    }
-
-    protected YouTubePlayer.Provider getYoutubePlayerProvider(){
-        return YouTubePlayerView;
-    }
+        setContentView(R.layout.activity_video_elegido);
+        TituloVideo=findViewById(R.id.TituloVideo);
+        YouTubePlayerView youTubePlayerView=findViewById(R.id.youtube_player_view);
 
 
+        Intent intent = getIntent();
+        ListaVideos = intent.getParcelableExtra("ArrayList");
+        TituloVideo.setText(ListaVideos.getTitulo());
+
+        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(YouTubePlayer youTubePlayer) {
+                super.onReady(youTubePlayer);
+                String VideoId=ListaVideos.IdVideo;
+                youTubePlayer.loadVideo(VideoId,0);
+            }
+        });
+
+        youTubePlayerView.addFullScreenListener(new YouTubePlayerFullScreenListener() {
+            @Override
+            public void onYouTubePlayerEnterFullScreen() {
+
+            }
+
+            @Override
+            public void onYouTubePlayerExitFullScreen() {
+                int  newHeight=160;
+                int newWidth=800;
+                youTubePlayerView.requestLayout();
+                youTubePlayerView.getLayoutParams().height=newHeight;
+                youTubePlayerView.getLayoutParams().width=newWidth;
+
+
+            }
+        });
+
+
+
+ }
 }

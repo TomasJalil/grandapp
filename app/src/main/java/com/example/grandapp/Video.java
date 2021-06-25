@@ -1,8 +1,11 @@
 package com.example.grandapp;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 
-public class Video {
+public class Video implements Parcelable {
     String Titulo;
     String IdVideo;
     String Descripcion;
@@ -19,6 +22,26 @@ public class Video {
 
     }
 
+    protected Video(Parcel in) {
+        Titulo = in.readString();
+        IdVideo = in.readString();
+        Descripcion = in.readString();
+        NombreCanal = in.readString();
+        UrlMiniatura = in.readString();
+    }
+
+    public static final Creator<Video> CREATOR = new Creator<Video>() {
+        @Override
+        public Video createFromParcel(Parcel in) {
+            return new Video(in);
+        }
+
+        @Override
+        public Video[] newArray(int size) {
+            return new Video[size];
+        }
+    };
+
     public String getTitulo(){return Titulo;}
     public void setTitulo(String titulo) {Titulo = titulo;}
     public String getIdVideo(){return IdVideo;}
@@ -31,12 +54,18 @@ public class Video {
     public void setUrlMiniatura(String urlMiniatura){UrlMiniatura=urlMiniatura;}
 
 
-
-
-
-
-
-
-
+    @Override
+    public int describeContents() {
+        return 0;
     }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(Titulo);
+        dest.writeString(IdVideo);
+        dest.writeString(Descripcion);
+        dest.writeString(NombreCanal);
+        dest.writeString(UrlMiniatura);
+    }
+}
 

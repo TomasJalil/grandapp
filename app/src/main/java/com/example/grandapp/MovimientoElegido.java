@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -26,6 +27,7 @@ import java.util.List;
 
 public class MovimientoElegido extends AppCompatActivity {
     TextView TextoTema,titulo1,titulo2,titulo3,titulo4,titulo5;
+    String VideoKey="AIzaSyCm-7uqrWacMSxZQXYMbMvwfzXFu7rToNI";
     int idTema;
     String nombreTema;
     Tema ListaTemas;
@@ -157,7 +159,7 @@ public class MovimientoElegido extends AppCompatActivity {
             for (int i = 0; i <= 4; i++) {
                 try {
 
-                    URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key=AIzaSyDakGyuo6jNopcD0JGmy0Sji0-eD91vgpY&part=snippet&type=video");
+                    URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key="+VideoKey+"&part=snippet&type=video");
                     HttpURLConnection miConexion = (HttpURLConnection) miRuta2.openConnection();
                     if (miConexion.getResponseCode() == 200) {
 
@@ -197,6 +199,41 @@ Log.d("Entra procesarJson","Entro a procesar Json");
             UrlMiniaturas[i]=UrlMiniatura;
      ListaVideos.add(new Video(titulo,IdVideo,descripcion,nombreCanal,UrlMiniatura));
      Log.d("url",UrlMiniatura);
+        }
+
+        public void onClick1(View v){
+                if (v.getId() == R.id.Miniatura1){
+                    Integer x=0;
+                    Intent intent = new Intent(MovimientoElegido.this,VideoElegido.class);
+                    intent.putExtra("ArrayList", ListaVideos.get(x));
+                    startActivity(intent);
+
+                }
+                if (v.getId() == R.id.Miniatura2){
+                    Integer x=1;
+                    Intent intent = new Intent(MovimientoElegido.this,VideoElegido.class);
+                    intent.putExtra("ArrayList", ListaVideos.get(x));
+                    startActivity(intent);
+
+                }
+                if (v.getId() == R.id.Miniatura3){
+                    Integer x=2;
+                    Intent intent = new Intent(MovimientoElegido.this,VideoElegido.class);
+                    intent.putExtra("ArrayList", ListaVideos.get(x));
+                    startActivity(intent);
+                }
+                if (v.getId() == R.id.Miniatura4){
+                    Integer x=3;
+                    Intent intent = new Intent(MovimientoElegido.this,VideoElegido.class);
+                    intent.putExtra("ArrayList", ListaVideos.get(x));
+                    startActivity(intent);
+                }
+                if (v.getId() == R.id.Miniatura5){
+                    Integer x=4;
+                    Intent intent = new Intent(MovimientoElegido.this,VideoElegido.class);
+                    intent.putExtra("ArrayList", ListaVideos.get(x));
+                    startActivity(intent);
+                }
         }
 
 }
