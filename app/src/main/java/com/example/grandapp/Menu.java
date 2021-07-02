@@ -19,4 +19,8 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Movimiento.class);
         startActivity(intent);
     }
+    public void irLibros(View view){
+        Intent intent = new Intent(this, LibrosMain.class);
+        startActivity(intent);
+    }
 }

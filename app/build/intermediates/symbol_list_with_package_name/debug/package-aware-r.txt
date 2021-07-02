@@ -1630,6 +1630,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id buscarCategoria
+id buscarNombre
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1646,6 +1648,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id confPass
 id confirm_button
 id container
 id content
@@ -1883,6 +1886,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txtLibros
 id unchecked
 id uniform
 id unlabeled
@@ -1961,6 +1965,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_categoria_elegida
+layout activity_libros_busqueda_categoria
+layout activity_libros_busqueda_nombre
+layout activity_libros_main
 layout activity_login
 layout activity_main
 layout activity_maps
