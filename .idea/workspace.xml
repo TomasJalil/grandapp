@@ -29,7 +29,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adec0177-df16-42de-9aa2-a31182eab535" name="Default Changelist" comment="nose no le den bola" />
+    <list default="true" id="adec0177-df16-42de-9aa2-a31182eab535" name="Default Changelist" comment="nose no le den bola">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/RecyclerAdapterLibro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/libro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/recyclerlibro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/NombreElegido.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/grandapp/NombreElegido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_libros_busqueda_categoria.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_libros_busqueda_categoria.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +94,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/TP4" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
@@ -102,12 +115,13 @@
       <recent name="com.example.grandapp" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\romin\Documents\GitHub\grandapp\app\src\main\res\drawable" />
       <recent name="C:\Users\melan\OneDrive\Documents\GitHub\grandapp\app\libs" />
     </key>
     <key name="android.template.-90500795">
       <recent name="com.example.grandapp" />
     </key>
-    <key name="android.template.-596927054">
+    <key name="android.template.2063177297">
       <recent name="com.example.grandapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -115,7 +129,7 @@
       <recent name="C:\Users\45748937\Documents\GitHub\grandapp\app" />
       <recent name="C:\Users\54112\Documents\GitHub\grandapp\app\src\main\res\drawable" />
     </key>
-    <key name="android.template.2063177297">
+    <key name="android.template.-596927054">
       <recent name="com.example.grandapp" />
     </key>
   </component>
@@ -216,10 +230,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="nose no le den bola" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1624630683356">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1626441198617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1624630683356" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1626441198617" />
     <state x="686" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624501481014" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1624500377445">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -294,19 +308,24 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622819483515" />
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1619899597161" />
-    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624622880509">
+    <state x="499" y="142" key="chooseDestDirectoryDialog" timestamp="1626435349123">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1624622880509" />
+    <state x="499" y="142" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1626435349123" />
+    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626434664224">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="547" y="304" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1626434664224" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621603220751" />
     <state x="769" y="474" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1920.1040/1920.0.1920.1040@0.40.1920.1040" timestamp="1621602383995" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1623514867613">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1623514867613" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1624502160675">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="443" y="158" width="479" height="475" key="search.everywhere.popup" timestamp="1626434668663">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="443" y="158" width="479" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1626434668663" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1624502160675" />
   </component>
   <component name="XDebuggerManager">

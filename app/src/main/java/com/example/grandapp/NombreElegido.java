@@ -1,8 +1,11 @@
 package com.example.grandapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.icu.text.CaseMap;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -15,6 +18,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -22,11 +26,17 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class NombreElegido extends AppCompatActivity {
-    String title;
+    String[] vectitle,vecauthor,veccontent,vecurl;
     ArrayList<Libro> ListaLibros = new ArrayList<>();
+    String title;
+    private RecyclerView recyclerView;
+    private RecyclerViewAdaptador recyclerViewAdaptador;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        recyclerView=findViewById(R.id.recyclerViewLibro);
+
         setContentView(R.layout.activity_nombre_elegido);
         Bundle paquete;
         paquete = this.getIntent().getExtras();
@@ -41,6 +51,9 @@ public class NombreElegido extends AppCompatActivity {
         @Override
         protected void onPostExecute(ArrayList<Libro> aVoid) {
             super.onPostExecute(aVoid);
+
+            TareaAsincronicaFoto mille= new TareaAsincronicaFoto();
+            mille.execute(vecurl);
         }
 
         @Override
@@ -71,14 +84,58 @@ public class NombreElegido extends AppCompatActivity {
             parseadorDeJSon = new JsonParser();
             JsonArray objJsonCrudo;
             objJsonCrudo = parseadorDeJSon.parse(JSonCrudos).getAsJsonArray();
+            vectitle=new String[objJsonCrudo.size()];
+            vecauthor=new String[objJsonCrudo.size()];
+            veccontent=new String[objJsonCrudo.size()];
+            vecurl=new String[objJsonCrudo.size()];
             for (int i = 0; i <= objJsonCrudo.size(); i++) {
                 JsonObject unLibro = objJsonCrudo.get(i).getAsJsonObject();
-                String title = unLibro.get("title").getAsString();
-                String UrlMiniatura = unLibro.get("thumbnail").getAsString();
-                String author = unLibro.get("author").getAsString();
-                String content = unLibro.get("content").getAsString();
-                ListaLibros.add(new Libro(title, author, content, UrlMiniatura));
+                vectitle[i] = unLibro.get("title").getAsString();
+                vecurl[i] = unLibro.get("thumbnail").getAsString();
+                vecauthor[i] = unLibro.get("author").getAsString();
+                veccontent[i] = unLibro.get("content").getAsString();
+
             }
         }
+    }
+    private class TareaAsincronicaFoto extends AsyncTask<String[], Void, Bitmap[]> {
+        @Override
+        protected void onPostExecute(Bitmap[] imagenConvertida) {
+
+            for (int x=0;x<vecurl.length;x++) {
+                ListaLibros.add(new Libro(vectitle[x], vecauthor[x], veccontent[x],imagenConvertida[x]));
+            }
+
+        }
+
+        @Override
+        protected Bitmap[] doInBackground(String[]... vecurl) {
+            Bitmap[] ImagenConvertida = new Bitmap[vecurl.length];
+            for (int i = 0; i <= vecurl.length-1; i++) {
+                ImagenConvertida[i] = null;
+                Bitmap imagenConvertida = ImagenConvertida[i];
+                try {
+                    URL miRuta;
+
+                    miRuta = new URL(""+vecurl[0][i]);
+                    Log.d("Descarga", "Mi ruta obtenida: " + miRuta);
+                    HttpURLConnection conexionUrl;
+                    conexionUrl = (HttpURLConnection) miRuta.openConnection();
+                    if (conexionUrl.getResponseCode() == 200) {
+                        InputStream cuerpoDatos = conexionUrl.getInputStream();
+                        BufferedInputStream lectorEntrada = new BufferedInputStream(cuerpoDatos);
+                        ImagenConvertida[i] = BitmapFactory.decodeStream(lectorEntrada);
+                        conexionUrl.disconnect();
+                    }
+                } catch (Exception err) {
+                    Log.d("Descarga", "Error: " + err);
+                }
+
+
+            }
+            return ImagenConvertida;
+        }
+
+
     }
 }
