@@ -3,6 +3,8 @@ package com.example.grandapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +14,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -20,6 +23,7 @@ import java.util.ArrayList;
 
 public class CategoriaElegida extends AppCompatActivity {
     String Categoria;
+    String[] vectitle,vecauthor,veccontent,vecurl;
     ArrayList<Libro> ListaLibros = new ArrayList<>();
 
     @Override
@@ -59,22 +63,64 @@ public class CategoriaElegida extends AppCompatActivity {
             return ListaLibros;
         }
 
-
         public void ProcesarJsonLeidoLibro(InputStreamReader JSonCrudos) {
             Log.d("Entra procesarJson", "Entro a procesar Json");
             JsonParser parseadorDeJSon;
             parseadorDeJSon = new JsonParser();
             JsonArray objJsonCrudo;
             objJsonCrudo = parseadorDeJSon.parse(JSonCrudos).getAsJsonArray();
-            for (int i=0;i<=objJsonCrudo.size();i++){
-            JsonObject unLibro = objJsonCrudo.get(i).getAsJsonObject();
-            String title = unLibro.get("title").getAsString();
-            String UrlMiniatura = unLibro.get("thumbnail").getAsString();
-            String author = unLibro.get("author").getAsString();
-            String content = unLibro.get("content").getAsString();
-            ListaLibros.add(new Libro(title, author, content, UrlMiniatura));
+            vectitle=new String[objJsonCrudo.size()];
+            vecauthor=new String[objJsonCrudo.size()];
+            veccontent=new String[objJsonCrudo.size()];
+            vecurl=new String[objJsonCrudo.size()];
+            for (int i = 0; i <= objJsonCrudo.size(); i++) {
+                JsonObject unLibro = objJsonCrudo.get(i).getAsJsonObject();
+                vectitle[i] = unLibro.get("title").getAsString();
+                vecurl[i] = unLibro.get("thumbnail").getAsString();
+                vecauthor[i] = unLibro.get("author").getAsString();
+                veccontent[i] = unLibro.get("content").getAsString();
+
             }
         }
+    }
+    private class TareaAsincronicaFoto extends AsyncTask<String[], Void, Bitmap[]> {
+        @Override
+        protected void onPostExecute(Bitmap[] imagenConvertida) {
+
+            for (int x=0;x<vecurl.length;x++) {
+                ListaLibros.add(new Libro(vectitle[x], vecauthor[x], veccontent[x],imagenConvertida[x]));
+            }
+
+        }
+
+        @Override
+        protected Bitmap[] doInBackground(String[]... vecurl) {
+            Bitmap[] ImagenConvertida = new Bitmap[vecurl.length];
+            for (int i = 0; i <= vecurl.length-1; i++) {
+                ImagenConvertida[i] = null;
+                Bitmap imagenConvertida = ImagenConvertida[i];
+                try {
+                    URL miRuta;
+
+                    miRuta = new URL(""+vecurl[0][i]);
+                    Log.d("Descarga", "Mi ruta obtenida: " + miRuta);
+                    HttpURLConnection conexionUrl;
+                    conexionUrl = (HttpURLConnection) miRuta.openConnection();
+                    if (conexionUrl.getResponseCode() == 200) {
+                        InputStream cuerpoDatos = conexionUrl.getInputStream();
+                        BufferedInputStream lectorEntrada = new BufferedInputStream(cuerpoDatos);
+                        ImagenConvertida[i] = BitmapFactory.decodeStream(lectorEntrada);
+                        conexionUrl.disconnect();
+                    }
+                } catch (Exception err) {
+                    Log.d("Descarga", "Error: " + err);
+                }
+
+
+            }
+            return ImagenConvertida;
+        }
+
 
     }
 }

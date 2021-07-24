@@ -35,7 +35,7 @@ public class NombreElegido extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        recyclerView=findViewById(R.id.recyclerViewLibro);
+       // recyclerView=findViewById(R.id.recyclerViewLibro);//min 5:50
 
         setContentView(R.layout.activity_nombre_elegido);
         Bundle paquete;
