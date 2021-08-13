@@ -5,5 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NombreElegido">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tituloLibro"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="titulo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autorLibro"
+       app:layout_constraintTop_toBottomOf="@+id/tituloLibro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="4dp"
+        android:text="autor"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenidoLibro"
+      app:layout_constraintTop_toBottomOf="@+id/autorLibro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="4dp"
+        android:text="contenido"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagen"
+      app:layout_constraintTop_toBottomOf="@+id/contenidoLibro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="4dp"
+        ></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
