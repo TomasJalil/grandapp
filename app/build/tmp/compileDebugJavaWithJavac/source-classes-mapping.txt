@@ -1,5 +1,5 @@
-com/example/grandapp/LibrosBusquedaNombre.java
- com.example.grandapp.LibrosBusquedaNombre
+com/example/grandapp/Menu.java
+ com.example.grandapp.Menu
 com/example/grandapp/VideoElegido.java
  com.example.grandapp.VideoElegido
  com.example.grandapp.VideoElegido$1
@@ -37,11 +37,9 @@ com/example/grandapp/comentarios.java
  com.example.grandapp.comentarios
 com/example/grandapp/MedicamentoXusuario.java
  com.example.grandapp.MedicamentoXusuario
-com/example/grandapp/NombreElegido.java
- com.example.grandapp.NombreElegido
- com.example.grandapp.NombreElegido$1
- com.example.grandapp.NombreElegido$TareaAsincronicaFoto
- com.example.grandapp.NombreElegido$TareaAsincronicaNombreLibro
+com/example/grandapp/Registro.java
+ com.example.grandapp.Registro
+ com.example.grandapp.Registro$1
 com/example/grandapp/publicaciones.java
  com.example.grandapp.publicaciones
 com/example/grandapp/Login.java
@@ -65,8 +63,10 @@ com/example/grandapp/LibrosBusquedaCategoria.java
  com.example.grandapp.LibrosBusquedaCategoria
 com/example/grandapp/LibrosMain.java
  com.example.grandapp.LibrosMain
-com/example/grandapp/Registro.java
- com.example.grandapp.Registro
- com.example.grandapp.Registro$1
-com/example/grandapp/Menu.java
- com.example.grandapp.Menu
+com/example/grandapp/LibrosBusquedaNombre.java
+ com.example.grandapp.LibrosBusquedaNombre
+com/example/grandapp/NombreElegido.java
+ com.example.grandapp.NombreElegido
+ com.example.grandapp.NombreElegido$1
+ com.example.grandapp.NombreElegido$TareaAsincronicaFoto
+ com.example.grandapp.NombreElegido$TareaAsincronicaNombreLibro

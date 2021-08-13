@@ -43,16 +43,14 @@ public class NombreElegido extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // recyclerView=findViewById(R.id.recyclerViewLibro);//min 5:5
-    recyclerView=(RecyclerView)findViewById(R.id.recyclerViewLibro);
-    recyclerView.setLayoutManager(new LinearLayoutManager(this));
-    recyclerViewAdaptador=new RecyclerViewAdaptador(ListaLibros);
-    recyclerView.setAdapter(recyclerViewAdaptador);
+
+
         setContentView(R.layout.activity_nombre_elegido);
         Bundle paquete;
         paquete = this.getIntent().getExtras();
          title = paquete.getString("Titulo");
-
+        recyclerView=(RecyclerView)findViewById(R.id.recyclerViewLibro);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         TareaAsincronicaNombreLibro mile= new TareaAsincronicaNombreLibro();
         mile.execute();
@@ -63,14 +61,30 @@ public class NombreElegido extends AppCompatActivity {
         imagen=findViewById(R.id.imgLibro);
         tituloBusqueda=findViewById(R.id.busqueda);
         tituloBusqueda.setText(title);
+        initViews();
+        initValues();
+
     }
+
+    private void initViews(){
+        recyclerView = findViewById(R.id.recyclerViewLibro);;
+    }
+
+    private void initValues() {
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(manager);
+
+        items.getItems();
+        recyclerViewAdaptador = new RecyclerViewAdaptador(items, this);
+        recyclerView.setAdapter(recyclerViewAdaptador);
+    }
+
 
 
     private class TareaAsincronicaNombreLibro extends AsyncTask<Void, Void, ArrayList<Libro>> {
         @Override
         protected void onPostExecute(ArrayList<Libro> aVoid) {
             super.onPostExecute(aVoid);
-
             TareaAsincronicaFoto mille= new TareaAsincronicaFoto();
             mille.execute(vecurl);
         }
@@ -128,6 +142,9 @@ public class NombreElegido extends AppCompatActivity {
                 content.setText(ListaLibros.get(x).getDescripcion());
                 imagen.setImageBitmap(imagenConvertida[x]);
             }
+
+            recyclerViewAdaptador=new RecyclerViewAdaptador(ListaLibros);
+            recyclerView.setAdapter(recyclerViewAdaptador);
         }
 
         @Override

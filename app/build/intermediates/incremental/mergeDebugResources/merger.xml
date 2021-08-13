@@ -5662,7 +5662,7 @@
         </item>
     </string-array></file><file path="C:\Users\45748937\Documents\GitHub\grandapp\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
         <item>@font/rhodium_libre</item>
-    </array></file><file path="C:\Users\45748937\Documents\GitHub\grandapp\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">grandapp</string><string name="title_activity_maps">Map</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="C:\Users\45748937\Documents\GitHub\grandapp\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Grandapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </array></file><file path="C:\Users\45748937\Documents\GitHub\grandapp\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">grandapp</string><string name="title_activity_maps">Map</string></file><file path="C:\Users\45748937\Documents\GitHub\grandapp\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.Grandapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
