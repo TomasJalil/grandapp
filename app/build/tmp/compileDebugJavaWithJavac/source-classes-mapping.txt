@@ -9,6 +9,9 @@ com/example/grandapp/MovimientoElegido.java
  com.example.grandapp.MovimientoElegido$1
  com.example.grandapp.MovimientoElegido$TareaAsincronicaApiYoutube
  com.example.grandapp.MovimientoElegido$TareaAsincronicaVideos
+com/example/grandapp/RecyclerViewAdaptador.java
+ com.example.grandapp.RecyclerViewAdaptador
+ com.example.grandapp.RecyclerViewAdaptador$ViewHolder
 com/example/grandapp/Comentario.java
  com.example.grandapp.Comentario
 com/example/grandapp/TipoMed.java
@@ -34,14 +37,20 @@ com/example/grandapp/comentarios.java
  com.example.grandapp.comentarios
 com/example/grandapp/MedicamentoXusuario.java
  com.example.grandapp.MedicamentoXusuario
+com/example/grandapp/NombreElegido.java
+ com.example.grandapp.NombreElegido
+ com.example.grandapp.NombreElegido$1
+ com.example.grandapp.NombreElegido$TareaAsincronicaFoto
+ com.example.grandapp.NombreElegido$TareaAsincronicaNombreLibro
 com/example/grandapp/publicaciones.java
  com.example.grandapp.publicaciones
 com/example/grandapp/Login.java
  com.example.grandapp.Login
  com.example.grandapp.Login$1
-com/example/grandapp/Registro.java
- com.example.grandapp.Registro
- com.example.grandapp.Registro$1
+com/example/grandapp/CategoriaElegida.java
+ com.example.grandapp.CategoriaElegida
+ com.example.grandapp.CategoriaElegida$TareaAsincronicaApiYoutube
+ com.example.grandapp.CategoriaElegida$TareaAsincronicaFoto
 com/example/grandapp/MapsActivity.java
  com.example.grandapp.MapsActivity
 com/example/grandapp/Tema.java
@@ -52,12 +61,12 @@ com/example/grandapp/Libro.java
  com.example.grandapp.Libro$1
 com/example/grandapp/MainActivity.java
  com.example.grandapp.MainActivity
-com/example/grandapp/Menu.java
- com.example.grandapp.Menu
-com/example/grandapp/LibrosMain.java
- com.example.grandapp.LibrosMain
 com/example/grandapp/LibrosBusquedaCategoria.java
  com.example.grandapp.LibrosBusquedaCategoria
-com/example/grandapp/CategoriaElegida.java
- com.example.grandapp.CategoriaElegida
- com.example.grandapp.CategoriaElegida$TareaAsincronicaApiYoutube
+com/example/grandapp/LibrosMain.java
+ com.example.grandapp.LibrosMain
+com/example/grandapp/Registro.java
+ com.example.grandapp.Registro
+ com.example.grandapp.Registro$1
+com/example/grandapp/Menu.java
+ com.example.grandapp.Menu

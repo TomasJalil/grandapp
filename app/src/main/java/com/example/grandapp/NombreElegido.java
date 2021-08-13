@@ -1,6 +1,7 @@
 package com.example.grandapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -12,6 +13,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.gson.JsonArray;
@@ -29,21 +33,36 @@ public class NombreElegido extends AppCompatActivity {
     String[] vectitle,vecauthor,veccontent,vecurl;
     ArrayList<Libro> ListaLibros = new ArrayList<>();
     String title;
+    TextView autor,titulo,content;
+    TextView tituloBusqueda;
+    ImageView imagen;
     private RecyclerView recyclerView;
     private RecyclerViewAdaptador recyclerViewAdaptador;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // recyclerView=findViewById(R.id.recyclerViewLibro);//min 5:50
-
+       // recyclerView=findViewById(R.id.recyclerViewLibro);//min 5:5
+    recyclerView=(RecyclerView)findViewById(R.id.recyclerViewLibro);
+    recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    recyclerViewAdaptador=new RecyclerViewAdaptador(ListaLibros);
+    recyclerView.setAdapter(recyclerViewAdaptador);
         setContentView(R.layout.activity_nombre_elegido);
         Bundle paquete;
         paquete = this.getIntent().getExtras();
          title = paquete.getString("Titulo");
+
+
         TareaAsincronicaNombreLibro mile= new TareaAsincronicaNombreLibro();
         mile.execute();
         Log.d("categoria", "onCreate: categ" + title);
+        autor=findViewById(R.id.autor);
+        titulo=findViewById(R.id.title);
+        content=findViewById(R.id.content);
+        imagen=findViewById(R.id.imgLibro);
+        tituloBusqueda=findViewById(R.id.busqueda);
+        tituloBusqueda.setText(title);
     }
 
 
@@ -104,8 +123,11 @@ public class NombreElegido extends AppCompatActivity {
 
             for (int x=0;x<vecurl.length;x++) {
                 ListaLibros.add(new Libro(vectitle[x], vecauthor[x], veccontent[x],imagenConvertida[x]));
+                titulo.setText(ListaLibros.get(x).getTitulo());
+                autor.setText(ListaLibros.get(x).getAutor());
+                content.setText(ListaLibros.get(x).getDescripcion());
+                imagen.setImageBitmap(imagenConvertida[x]);
             }
-
         }
 
         @Override
