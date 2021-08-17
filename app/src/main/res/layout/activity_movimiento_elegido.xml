@@ -18,6 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.005"
         />
 <ScrollView
@@ -194,6 +195,10 @@
 </ScrollView>
 
 </LinearLayout>
+=======
+        app:layout_constraintVertical_bias="0.17000002" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
         app:layout_constraintVertical_bias="0.17000002" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,9 +26,14 @@ com/example/grandapp/Publicacion.java
 com/example/grandapp/medicamentos.java
  com.example.grandapp.medicamentos
 <<<<<<< HEAD
+<<<<<<< HEAD
 com/example/grandapp/Video.java
  com.example.grandapp.Video
  com.example.grandapp.Video$1
+=======
+com/example/grandapp/MedicamentoXusuario.java
+ com.example.grandapp.MedicamentoXusuario
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
 com/example/grandapp/MedicamentoXusuario.java
  com.example.grandapp.MedicamentoXusuario
@@ -37,6 +42,7 @@ com/example/grandapp/UsuariosController.java
  com.example.grandapp.UsuariosController
 com/example/grandapp/comentarios.java
  com.example.grandapp.comentarios
+<<<<<<< HEAD
 <<<<<<< HEAD
 com/example/grandapp/MedicamentoXusuario.java
  com.example.grandapp.MedicamentoXusuario
@@ -88,6 +94,8 @@ com/example/grandapp/CategoriaElegida.java
  com.example.grandapp.CategoriaElegida$TareaAsincronicaApiYoutube
 >>>>>>> parent of bfb50b6 (version que funca medio pelo)
 =======
+=======
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 com/example/grandapp/Video.java
  com.example.grandapp.Video
 com/example/grandapp/MovimientoElegido.java

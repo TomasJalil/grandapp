@@ -50,6 +50,15 @@ public class Video implements Parcelable {
     public void setDescripcion(String descripcion) {Descripcion = descripcion;}
     public String getNombreCanal(){return NombreCanal;}
     public void setNombreCanal(String nombreCanal){NombreCanal=nombreCanal;}
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 
 
     @Override

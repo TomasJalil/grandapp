@@ -7,8 +7,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.view.View;
 import android.widget.ImageButton;
+=======
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
 >>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 import android.widget.TextView;
@@ -25,8 +28,12 @@ import java.util.ArrayList;
 
 public class MovimientoElegido extends AppCompatActivity {
 <<<<<<< HEAD
+<<<<<<< HEAD
     TextView TextoTema,titulo1,titulo2,titulo3,titulo4,titulo5;
     String VideoKey="AIzaSyCm-7uqrWacMSxZQXYMbMvwfzXFu7rToNI";
+=======
+    TextView TextoTema;
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
     TextView TextoTema;
 >>>>>>> parent of fbafad8 (Movimiento elegido terminado)
@@ -130,7 +137,13 @@ public class MovimientoElegido extends AppCompatActivity {
                 try {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                     URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key="+VideoKey+"&part=snippet&type=video");
+=======
+                    Log.d("quepasa", "Funciona" + IdVideos[i]);
+
+                    URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key=AIzaSyDFQ7exRc_5wsPQOQ5cqWVx0OklyC6eaDg&part=snippet&type=video");
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
                     Log.d("quepasa", "Funciona" + IdVideos[i]);
 
@@ -176,6 +189,7 @@ Log.d("hola","funciona= "+titulo+descripcion+nombreCanal+IdVideo);
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void onClick1(View v){
                 if (v.getId() == R.id.Miniatura1){
                     Integer x=0;
@@ -211,6 +225,10 @@ Log.d("hola","funciona= "+titulo+descripcion+nombreCanal+IdVideo);
                 }
         }
 
+=======
+
+    }
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 =======
 
     }

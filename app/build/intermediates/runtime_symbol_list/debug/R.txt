@@ -1544,6 +1544,7 @@ int id FUNCTION 0x7f0a000b
 int id IrLgn 0x7f0a000c
 int id META 0x7f0a000d
 <<<<<<< HEAD
+<<<<<<< HEAD
 int id Miniatura1 0x7f0a000e
 int id Miniatura2 0x7f0a000f
 int id Miniatura3 0x7f0a0010
@@ -2196,6 +2197,8 @@ int id youtube_player_seekbar 0x7f0a0173
 int id youtube_player_view 0x7f0a0174
 >>>>>>> parent of bfb50b6 (version que funca medio pelo)
 =======
+=======
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 int id Pass 0x7f0a000e
 int id SHIFT 0x7f0a000f
 int id SYM 0x7f0a0010
@@ -2524,6 +2527,9 @@ int id withText 0x7f0a0152
 int id wrap 0x7f0a0153
 int id wrap_content 0x7f0a0154
 int id youtube_view 0x7f0a0155
+<<<<<<< HEAD
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
+=======
 >>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 int integer abc_config_activityDefaultDur 0x7f0b0000
 int integer abc_config_activityShortDur 0x7f0b0001
