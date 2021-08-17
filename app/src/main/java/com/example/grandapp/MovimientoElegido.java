@@ -3,53 +3,54 @@ package com.example.grandapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-<<<<<<< HEAD
-<<<<<<< HEAD
 import android.view.View;
 import android.widget.ImageButton;
-=======
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MovimientoElegido extends AppCompatActivity {
-<<<<<<< HEAD
-<<<<<<< HEAD
     TextView TextoTema,titulo1,titulo2,titulo3,titulo4,titulo5;
     String VideoKey="AIzaSyCm-7uqrWacMSxZQXYMbMvwfzXFu7rToNI";
-=======
-    TextView TextoTema;
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
-    TextView TextoTema;
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
     int idTema;
     String nombreTema;
     Tema ListaTemas;
-    ArrayList<Video> ListaVideos;
+    ArrayList<Video> ListaVideos=new ArrayList<>();
     String[] IdVideos = new String[5];
-    Integer puntero = 0;
+    String[] UrlMiniaturas=new String[5];
+    ImageButton Miniatura1,Miniatura2,Miniatura3,Miniatura4,Miniatura5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movimiento_elegido);
         TextoTema = findViewById(R.id.textoTema);
-
+        titulo1=findViewById(R.id.Titulo1);
+        titulo2=findViewById(R.id.Titulo2);
+        titulo3=findViewById(R.id.Titulo3);
+        titulo4=findViewById(R.id.Titulo4);
+        titulo5=findViewById(R.id.Titulo5);
+        Miniatura1=findViewById(R.id.Miniatura1);
+        Miniatura2=findViewById(R.id.Miniatura2);
+        Miniatura3=findViewById(R.id.Miniatura3);
+        Miniatura4=findViewById(R.id.Miniatura4);
+        Miniatura5=findViewById(R.id.Miniatura5);
         Intent intent = getIntent();
         ListaTemas = intent.getParcelableExtra("ArrayList");
         nombreTema = ListaTemas.getNombre();
@@ -67,7 +68,7 @@ public class MovimientoElegido extends AppCompatActivity {
             for (int i = 0; i <= 4; i++) {
                 Log.d("getVideos", "El id del video es " + IdVideos[i] + " del tema ");
             }
-            llamarSegundaAsync(IdVideos);
+            llamarSegundaAsync();
 
         }
 
@@ -97,7 +98,7 @@ public class MovimientoElegido extends AppCompatActivity {
     }
 
     public void ProcesarJsonLeidoVideos(InputStreamReader JSonCrudoVideos) {
-        Log.d("Antes obj", "No se convierte en json object");
+        Log.d("Entra procesarJson","Entro a procesar Json");
 
         JsonParser parseadorDeJSon;
         parseadorDeJSon = new JsonParser();
@@ -114,7 +115,7 @@ public class MovimientoElegido extends AppCompatActivity {
         }
     }
 
-    public void llamarSegundaAsync(String[] IdVideos) {
+    public void llamarSegundaAsync() {
         TareaAsincronicaApiYoutube ApiYoutube = new TareaAsincronicaApiYoutube();
             ApiYoutube.execute();
 
@@ -122,39 +123,49 @@ public class MovimientoElegido extends AppCompatActivity {
     }
 
 
-    private class TareaAsincronicaApiYoutube extends AsyncTask<Integer, Void, Void> {
+    private class TareaAsincronicaApiYoutube extends AsyncTask<Void, Void, ArrayList<Video>> {
         @Override
-        protected void onPostExecute(Void aVoid) {
+        protected void onPostExecute(ArrayList<Video> aVoid) {
             super.onPostExecute(aVoid);
+
+
+            titulo1.setText(ListaVideos.get(0).getTitulo());
+            titulo2.setText(ListaVideos.get(1).getTitulo());
+            titulo3.setText(ListaVideos.get(2).getTitulo());
+            titulo4.setText(ListaVideos.get(3).getTitulo());
+            titulo5.setText(ListaVideos.get(4).getTitulo());
+            Glide.with(getApplicationContext())
+                    .load(ListaVideos.get(0).UrlMiniatura)
+                    .into(Miniatura1);
+            Glide.with(getApplicationContext())
+                    .load(ListaVideos.get(1).UrlMiniatura)
+                    .into(Miniatura2);
+            Glide.with(getApplicationContext())
+                    .load(ListaVideos.get(2).UrlMiniatura)
+                    .into(Miniatura3);
+            Glide.with(getApplicationContext())
+                    .load(ListaVideos.get(3).UrlMiniatura)
+                    .into(Miniatura4);
+            Glide.with(getApplicationContext())
+                    .load(ListaVideos.get(4).UrlMiniatura)
+                    .into(Miniatura5);
 
 
 
         }
 
         @Override
-        protected Void doInBackground(Integer... l) {
+        protected ArrayList<Video> doInBackground(Void... voids) {
             for (int i = 0; i <= 4; i++) {
                 try {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
                     URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key="+VideoKey+"&part=snippet&type=video");
-=======
-                    Log.d("quepasa", "Funciona" + IdVideos[i]);
-
-                    URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key=AIzaSyDFQ7exRc_5wsPQOQ5cqWVx0OklyC6eaDg&part=snippet&type=video");
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
-                    Log.d("quepasa", "Funciona" + IdVideos[i]);
-
-                    URL miRuta2 = new URL("https://www.googleapis.com/youtube/v3/search?q=" + IdVideos[i] + "&key=AIzaSyDFQ7exRc_5wsPQOQ5cqWVx0OklyC6eaDg&part=snippet&type=video");
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
                     HttpURLConnection miConexion = (HttpURLConnection) miRuta2.openConnection();
                     if (miConexion.getResponseCode() == 200) {
 
                         InputStream RespuestaTemas = miConexion.getInputStream();
                         InputStreamReader JSonCrudoVideos = new InputStreamReader(RespuestaTemas, "UTF-8");
-                        ProcesarJsonLeidoVideosYoutube(JSonCrudoVideos);
+                        ProcesarJsonLeidoVideosYoutube(JSonCrudoVideos,i);
                     } else {
                         Log.d("AccesoAPI", "Error en la conexion");
                     }
@@ -163,14 +174,13 @@ public class MovimientoElegido extends AppCompatActivity {
                     Log.d("AccesoAPI", "Hubo error al conectarme: " + error.getMessage());
                 }
             }
-            return null;
+            return ListaVideos;
 
 
         }
-
-        public Void ProcesarJsonLeidoVideosYoutube(InputStreamReader JSonCrudoVideos) {
-            Log.d("Antes obj", "No se convierte en json object");
-
+    }
+        public void ProcesarJsonLeidoVideosYoutube(InputStreamReader JSonCrudoVideos, Integer i) {
+Log.d("Entra procesarJson","Entro a procesar Json");
             JsonParser parseadorDeJSon;
             parseadorDeJSon = new JsonParser();
             JsonObject objJsonCrudo;
@@ -183,13 +193,14 @@ public class MovimientoElegido extends AppCompatActivity {
             String titulo=SnippetVideo.get("title").getAsString();
             String descripcion=SnippetVideo.get("description").getAsString();
             String nombreCanal=SnippetVideo.get("channelTitle").getAsString();
-Log.d("hola","funciona= "+titulo+descripcion+nombreCanal+IdVideo);
-// ListaVideos.add(new Video(titulo,IdVideo,descripcion,nombreCanal));
-            return null;
+            JsonObject objMiniatura=SnippetVideo.get("thumbnails").getAsJsonObject();
+            JsonObject MiniaturaDefault=objMiniatura.get("high").getAsJsonObject();
+            String UrlMiniatura=MiniaturaDefault.get("url").getAsString();
+            UrlMiniaturas[i]=UrlMiniatura;
+     ListaVideos.add(new Video(titulo,IdVideo,descripcion,nombreCanal,UrlMiniatura));
+     Log.d("url",UrlMiniatura);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         public void onClick1(View v){
                 if (v.getId() == R.id.Miniatura1){
                     Integer x=0;
@@ -225,12 +236,4 @@ Log.d("hola","funciona= "+titulo+descripcion+nombreCanal+IdVideo);
                 }
         }
 
-=======
-
-    }
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
-
-    }
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 }

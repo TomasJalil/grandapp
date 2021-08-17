@@ -30,14 +30,8 @@ android {
 }
 
 dependencies {
-<<<<<<< HEAD
-<<<<<<< HEAD
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
-=======
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
@@ -46,8 +40,6 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:27.0.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth:20.0.4'
-    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
-    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'androidx.navigation:navigation-fragment:2.2.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
@@ -55,7 +47,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
 
 
 }

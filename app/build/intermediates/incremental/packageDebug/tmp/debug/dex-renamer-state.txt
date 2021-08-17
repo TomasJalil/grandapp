@@ -1,22 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Fri Aug 13 11:24:50 ART 2021
-=======
-#Fri Jul 02 10:38:07 ART 2021
->>>>>>> parent of bfb50b6 (version que funca medio pelo)
-=======
-#Wed Jun 23 03:07:16 ART 2021
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
-=======
-#Wed Jun 23 03:07:16 ART 2021
->>>>>>> parent of fbafad8 (Movimiento elegido terminado)
+#Tue Aug 17 00:42:32 ART 2021
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\romin\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.1=C\:\\Users\\romin\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\romin\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.2=C\:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

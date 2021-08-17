@@ -1,83 +1,34 @@
 package com.example.grandapp;
 
-import android.graphics.Bitmap;
-import android.os.Parcel;
-import android.os.Parcelable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Libro implements Parcelable {
-    String Titulo;
-    String Autor;
-    String Descripcion;
-    Bitmap UrlMiniatura;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
-    protected Libro(Parcel in) {
-        Titulo = in.readString();
-        Autor = in.readString();
-        Descripcion = in.readString();
-        UrlMiniatura = in.readParcelable(Bitmap.class.getClassLoader());
-    }
-
-    public static final Creator<Libro> CREATOR = new Creator<Libro>() {
-        @Override
-        public Libro createFromParcel(Parcel in) {
-            return new Libro(in);
-        }
-
-        @Override
-        public Libro[] newArray(int size) {
-            return new Libro[size];
-        }
-    };
-
-    public String getTitulo() {
-        return Titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        Titulo = titulo;
-    }
-
-    public String getAutor() {
-        return Autor;
-    }
-
-    public void setAutor(String autor) {
-        Autor = autor;
-    }
-
-    public String getDescripcion() {
-        return Descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        Descripcion = descripcion;
-    }
-
-    public Bitmap getUrlMiniatura() {
-        return UrlMiniatura;
-    }
-
-    public void setUrlMiniatura(Bitmap urlMiniatura) {
-        UrlMiniatura = urlMiniatura;
-    }
-
-    public Libro(String titulo, String autor, String descripcion, Bitmap urlMiniatura) {
-        Titulo = titulo;
-        Autor = autor;
-        Descripcion = descripcion;
-        UrlMiniatura = urlMiniatura;
-    }
-
+public class Libro extends AppCompatActivity {
+Button btnLibro;
+EditText EditTextLibroIngresado;
     @Override
-    public int describeContents() {
-        return 0;
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_libro);
+        btnLibro=findViewById(R.id.btnBusquedaLibro);
+        EditTextLibroIngresado=findViewById(R.id.tituloLibro);
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(Titulo);
-        dest.writeString(Autor);
-        dest.writeString(Descripcion);
-        dest.writeParcelable(UrlMiniatura, flags);
+
+    }
+    public void buscarLibro(View view){
+        String LibroIngresado=EditTextLibroIngresado.getText().toString().trim();
+        Bundle paqueteLibro;
+        paqueteLibro=new Bundle();
+        paqueteLibro.putString("Libro",LibroIngresado);
+
+        Intent intent;
+        intent=new Intent(this,libroEncontrado.class);
+        intent.putExtras(paqueteLibro);
+        startActivity(intent);
     }
 }

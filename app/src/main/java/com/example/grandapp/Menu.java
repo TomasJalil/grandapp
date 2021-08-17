@@ -20,7 +20,7 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
     public void irLibros(View view){
-        Intent intent = new Intent(this, LibrosMain.class);
+        Intent intent = new Intent(this, Libro.class);
         startActivity(intent);
     }
 }
