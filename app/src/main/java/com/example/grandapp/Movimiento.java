@@ -34,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Movimiento extends AppCompatActivity {
-    ArrayList<Tema> TemasLista = new ArrayList<>();
+    ArrayList<Tema> TemasLista;
     Button Tema1,Tema2,Tema3,Tema4,Tema5,Tema6;
 
     @Override
@@ -47,7 +47,7 @@ public class Movimiento extends AppCompatActivity {
         Tema4=findViewById(R.id.tema4);
         Tema5=findViewById(R.id.tema5);
         Tema6=findViewById(R.id.tema6);
-
+        TemasLista = new ArrayList<>();
 
         TareaAsincronicaTema LecturaTemas = new TareaAsincronicaTema();
         LecturaTemas.execute();

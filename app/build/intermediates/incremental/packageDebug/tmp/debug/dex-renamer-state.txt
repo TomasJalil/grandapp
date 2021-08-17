@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Fri Aug 13 11:24:50 ART 2021
 =======
 #Fri Jul 02 10:38:07 ART 2021
 >>>>>>> parent of bfb50b6 (version que funca medio pelo)
+=======
+#Wed Jun 23 03:07:16 ART 2021
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex

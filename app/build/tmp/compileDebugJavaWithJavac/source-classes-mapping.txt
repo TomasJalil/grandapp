@@ -25,13 +25,19 @@ com/example/grandapp/Publicacion.java
  com.example.grandapp.Publicacion
 com/example/grandapp/medicamentos.java
  com.example.grandapp.medicamentos
+<<<<<<< HEAD
 com/example/grandapp/Video.java
  com.example.grandapp.Video
  com.example.grandapp.Video$1
+=======
+com/example/grandapp/MedicamentoXusuario.java
+ com.example.grandapp.MedicamentoXusuario
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
 com/example/grandapp/UsuariosController.java
  com.example.grandapp.UsuariosController
 com/example/grandapp/comentarios.java
  com.example.grandapp.comentarios
+<<<<<<< HEAD
 com/example/grandapp/MedicamentoXusuario.java
  com.example.grandapp.MedicamentoXusuario
 <<<<<<< HEAD
@@ -81,3 +87,16 @@ com/example/grandapp/CategoriaElegida.java
  com.example.grandapp.CategoriaElegida
  com.example.grandapp.CategoriaElegida$TareaAsincronicaApiYoutube
 >>>>>>> parent of bfb50b6 (version que funca medio pelo)
+=======
+com/example/grandapp/Video.java
+ com.example.grandapp.Video
+com/example/grandapp/MovimientoElegido.java
+ com.example.grandapp.MovimientoElegido
+ com.example.grandapp.MovimientoElegido$1
+ com.example.grandapp.MovimientoElegido$TareaAsincronicaApiYoutube
+ com.example.grandapp.MovimientoElegido$TareaAsincronicaVideos
+com/example/grandapp/Movimiento.java
+ com.example.grandapp.Movimiento
+ com.example.grandapp.Movimiento$1
+ com.example.grandapp.Movimiento$TareaAsincronicaTema
+>>>>>>> parent of fbafad8 (Movimiento elegido terminado)
