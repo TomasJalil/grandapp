@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class RecyclerViewAdaptador extends RecyclerView.Adapter<com.example.grandapp.RecyclerViewAdaptador.ViewHolder> {
+
+    public  class RecyclerViewAdaptador extends RecyclerView.Adapter<RecyclerViewAdaptador.ViewHolder> {
         public static class ViewHolder extends RecyclerView.ViewHolder {
             private ImageView imgLibro;
             private TextView tituloLibro;
@@ -34,7 +35,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<com.example.gran
         }
 
         public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_recycler_view_adaptador,parent, false);
+            View view  = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerlibro,parent, false);
             ViewHolder viewHolder= new ViewHolder(view);
             return viewHolder;
         }
@@ -43,7 +44,7 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<com.example.gran
         public void onBindViewHolder(ViewHolder holder, int position) {
             holder.imgLibro.setImageBitmap(libroslista.get(position).getUrlMiniatura());
             holder.contenidoLibro.setText(libroslista.get(position).getDescripcion());
-            holder.tituloLibro.setText(libroslista.get(position).getTitulo());
+            holder.tituloLibro.setText(libroslista.get(position).getTitulo()));
             holder.autor.setText(libroslista.get(position).getAutor());
 
 
@@ -54,7 +55,20 @@ public class RecyclerViewAdaptador extends RecyclerView.Adapter<com.example.gran
             return libroslista.size();
         }
 
+        public static class RecyclerHolder extends RecyclerView.ViewHolder{
+
+
+
+            public RecyclerHolder(@NonNull View itemView){
+                super(itemView);
+                imgLibro=itemView.findViewById(R.id.imgLibro);
+                tituloLibro=itemView.findViewById(R.id.title);
+                contenidoLibro=itemView.findViewById(R.id.content);
+                autor=itemView.findViewById(R.id.autor);
+            }
+        }
 
 
     }
 
+}

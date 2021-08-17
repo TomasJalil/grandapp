@@ -1504,7 +1504,6 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable libro
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1622,7 +1621,6 @@ id all
 id always
 id async
 id auto
-id autor
 id barrier
 id beginning
 id blocking
@@ -1634,8 +1632,6 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buscarCategoria
 id buscarNombre
-id busqueda
-id button
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1680,7 +1676,6 @@ id disableHome
 id drop_shadow_bottom
 id drop_shadow_top
 id dropdown_menu
-id editText
 id edit_query
 id email
 id end
@@ -1717,7 +1712,6 @@ id icon_only
 id ifRoom
 id image
 id imageView
-id imgLibro
 id info
 id invisible
 id irRgstr
@@ -1796,8 +1790,11 @@ id progress
 id progress_circular
 id progress_horizontal
 id radio
+<<<<<<< HEAD
 id recycler
 id recyclerViewLibro
+=======
+>>>>>>> parent of bfb50b6 (version que funca medio pelo)
 id recycler_view
 id registroBtn
 id right
@@ -1983,8 +1980,6 @@ layout activity_maps
 layout activity_menu
 layout activity_movimiento
 layout activity_movimiento_elegido
-layout activity_nombre_elegido
-layout activity_recycler_view_adaptador
 layout activity_registro
 layout activity_video_elegido
 layout ayp_default_player_ui
