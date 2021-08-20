@@ -5,36 +5,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.Window;
 import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.Console;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Movimiento extends AppCompatActivity {
+
     ArrayList<Tema> TemasLista = new ArrayList<>();
     Button Tema1,Tema2,Tema3,Tema4,Tema5,Tema6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movimiento);
         Tema1=findViewById(R.id.tema1);

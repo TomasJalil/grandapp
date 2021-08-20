@@ -56,24 +56,32 @@
         "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boton4final.png.flat",
-        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\drawable\\boton4final.png"
-    },
-    {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_edittext.xml.flat",
         "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\drawable\\rounded_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boton4final.png.flat",
+        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\drawable\\boton4final.png"
     },
     {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_libro.xml.flat",
         "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\layout\\activity_libro.xml"
     },
     {
-        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_libro.xml.flat",
+        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\layout\\item_list_libro.xml"
+    },
+    {
+        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_libro_elegido.xml.flat",
+        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\layout\\activity_libro_elegido.xml"
     },
     {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_movimiento.xml.flat",
         "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\layout\\activity_movimiento.xml"
+    },
+    {
+        "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\54112\\Documents\\GitHub\\grandapp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

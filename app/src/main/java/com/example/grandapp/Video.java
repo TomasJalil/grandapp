@@ -3,8 +3,6 @@ package com.example.grandapp;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.ArrayList;
-
 public class Video implements Parcelable {
     String Titulo;
     String IdVideo;

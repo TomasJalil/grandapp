@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".Libro">
+    tools:context=".libroInicio">
 
     <TextView
         android:id="@+id/textView4"
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/boton3final" />
 
     <EditText
-        android:id="@+id/tituloLibro"
+        android:id="@+id/tituloLibroIngresado"
         android:layout_width="217dp"
         android:layout_height="38dp"
         android:layout_marginTop="40dp"

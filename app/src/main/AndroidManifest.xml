@@ -17,8 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Grandapp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".libroEncontrado"></activity>
-        <activity android:name=".Libro" />
+        <activity android:name=".libroElegido"></activity>
+        <activity android:name=".libroEncontrado" />
+        <activity android:name=".libroInicio" />
         <activity android:name=".buscarLibro" />
         <activity android:name=".VideoElegido" />
         <activity android:name=".MovimientoElegido" />

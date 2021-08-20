@@ -2,9 +2,11 @@ com/example/grandapp/VideoElegido.java
  com.example.grandapp.VideoElegido
  com.example.grandapp.VideoElegido$1
  com.example.grandapp.VideoElegido$2
-com/example/grandapp/Registro.java
- com.example.grandapp.Registro
- com.example.grandapp.Registro$1
+com/example/grandapp/Login.java
+ com.example.grandapp.Login
+ com.example.grandapp.Login$1
+com/example/grandapp/libroInicio.java
+ com.example.grandapp.libroInicio
 com/example/grandapp/MovimientoElegido.java
  com.example.grandapp.MovimientoElegido
  com.example.grandapp.MovimientoElegido$1
@@ -17,6 +19,9 @@ com/example/grandapp/BuildConfig.java
  com.example.grandapp.BuildConfig
 com/example/grandapp/libroEncontrado.java
  com.example.grandapp.libroEncontrado
+ com.example.grandapp.libroEncontrado$1
+ com.example.grandapp.libroEncontrado$TareaAsincronicaFotoLibro
+ com.example.grandapp.libroEncontrado$TareaAsincronicaNombreLibro
 com/example/grandapp/Libro.java
  com.example.grandapp.Libro
 com/example/grandapp/MainActivity.java
@@ -27,11 +32,20 @@ com/example/grandapp/Movimiento.java
  com.example.grandapp.Movimiento$TareaAsincronicaTema
 com/example/grandapp/buscarLibro.java
  com.example.grandapp.buscarLibro
+com/example/grandapp/RecyclerAdapterLibro.java
+ com.example.grandapp.RecyclerAdapterLibro
+ com.example.grandapp.RecyclerAdapterLibro$RecyclerHolder
 com/example/grandapp/Video.java
  com.example.grandapp.Video
  com.example.grandapp.Video$1
-com/example/grandapp/Login.java
- com.example.grandapp.Login
- com.example.grandapp.Login$1
+com/example/grandapp/Registro.java
+ com.example.grandapp.Registro
+ com.example.grandapp.Registro$1
 com/example/grandapp/Menu.java
  com.example.grandapp.Menu
+com/example/grandapp/itemListLibro.java
+ com.example.grandapp.itemListLibro
+com/example/grandapp/libroElegido.java
+ com.example.grandapp.libroElegido
+ com.example.grandapp.libroElegido$1
+ com.example.grandapp.libroElegido$TareaAsincronicaFotoLibro

@@ -3,12 +3,11 @@ package com.example.grandapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -17,13 +16,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MovimientoElegido extends AppCompatActivity {
     TextView TextoTema,titulo1,titulo2,titulo3,titulo4,titulo5;
@@ -38,6 +35,8 @@ public class MovimientoElegido extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movimiento_elegido);
         TextoTema = findViewById(R.id.textoTema);

@@ -3,14 +3,6 @@ package com.example.grandapp;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.annotation.NonNull;
-
-import com.google.gson.JsonObject;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.stream.Stream;
-
 public class Tema implements Parcelable {
     private int IdTema;
     private String Nombre;

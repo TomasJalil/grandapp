@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -25,6 +26,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import android.view.Window;
 
 public class MainActivity extends AppCompatActivity {
     Button IrRegistro, IrLogin;
@@ -32,10 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         IrLogin = findViewById(R.id.IrLgn);
         IrRegistro = findViewById(R.id.irRgstr);
+
     }
 
 

@@ -822,6 +822,8 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color androidx_core_ripple_material_light
+color androidx_core_secondary_text_default_material_light
 color ayp_drop_shadow
 color ayp_item_selected
 color ayp_menu_icons
@@ -1541,6 +1543,7 @@ id BtnMovilidad
 id BtnRemedios
 id BtnSeries
 id CTRL
+id CardView
 id ConfPass
 id FUNCTION
 id IrLgn
@@ -1560,6 +1563,7 @@ id Titulo2
 id Titulo3
 id Titulo4
 id Titulo5
+id TituloLibroElegido
 id TituloVideo
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1655,6 +1659,7 @@ id content
 id contentPanel
 id controls_container
 id coordinator
+id cuerpo
 id custom
 id customPanel
 id custom_action_left_button
@@ -1687,6 +1692,7 @@ id expand_activities_button
 id expanded_menu
 id extra_views_container
 id fade
+id fechadesalida
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1695,6 +1701,7 @@ id filter_chip
 id fitToContents
 id fixed
 id forever
+id fotoPortadaElegida
 id fragment_container_view_tag
 id fullscreen_button
 id ghost_view
@@ -1709,6 +1716,7 @@ id hybrid
 id icon
 id icon_group
 id icon_only
+id idiomaElegido
 id ifRoom
 id image
 id imageView
@@ -1786,6 +1794,7 @@ id peekHeight
 id percent
 id pin
 id play_pause_button
+id portadaLibro
 id progress
 id progress_circular
 id progress_horizontal
@@ -1796,6 +1805,7 @@ id right
 id right_icon
 id right_side
 id rounded
+id rvLista
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -1881,6 +1891,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id tituloLibro
+id tituloLibroIngresado
 id top
 id topPanel
 id touch_outside
@@ -1969,6 +1980,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_buscar_libro
 layout activity_libro
+layout activity_libro_elegido
 layout activity_libro_encontrado
 layout activity_login
 layout activity_main
@@ -1999,6 +2011,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_list_libro
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

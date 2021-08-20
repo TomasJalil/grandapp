@@ -1,34 +1,55 @@
 package com.example.grandapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.graphics.Bitmap;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+public class Libro {
+    String Titulo; //Listo
+    String Descripcion; //Listo
+    String fecha; //Listo
+    String idioma; //Listo
 
-public class Libro extends AppCompatActivity {
-Button btnLibro;
-EditText EditTextLibroIngresado;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_libro);
-        btnLibro=findViewById(R.id.btnBusquedaLibro);
-        EditTextLibroIngresado=findViewById(R.id.tituloLibro);
-
+    public Libro(String titulo, String descripcion, String fecha, String idioma) {
+        Titulo = titulo;
+        Descripcion = descripcion;
+        this.fecha = fecha;
+        this.idioma = idioma;
 
     }
-    public void buscarLibro(View view){
-        String LibroIngresado=EditTextLibroIngresado.getText().toString().trim();
-        Bundle paqueteLibro;
-        paqueteLibro=new Bundle();
-        paqueteLibro.putString("Libro",LibroIngresado);
 
-        Intent intent;
-        intent=new Intent(this,libroEncontrado.class);
-        intent.putExtras(paqueteLibro);
-        startActivity(intent);
+
+    public String getTitulo() {
+        return Titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        Titulo = titulo;
+    }
+
+
+
+    public String getDescripcion() {
+        return Descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        Descripcion = descripcion;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+
+
+    public String getIdioma() {
+        return idioma;
+    }
+
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
     }
 }
