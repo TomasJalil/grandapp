@@ -28,4 +28,8 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, libroInicio.class);
         startActivity(intent);
     }
+    public void irDiarios(View view){
+        Intent intent = new Intent(this, Diarios.class);
+        startActivity(intent);
+    }
 }

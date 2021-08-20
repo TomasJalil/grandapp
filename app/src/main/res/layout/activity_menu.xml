@@ -55,7 +55,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.516"
-        app:srcCompat="@drawable/boton6final" />
+        app:srcCompat="@drawable/boton6final"
+        android:onClick="irDiarios"/>
 
     <ImageButton
         android:id="@+id/BtnRemedios"
