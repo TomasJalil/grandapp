@@ -1506,6 +1506,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable img1
+drawable img2
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1636,6 +1638,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnBusquedaLibro
+id btnJugar
 id buttonPanel
 id cancel_action
 id cancel_button
@@ -1648,6 +1651,7 @@ id checked
 id chip
 id chip_group
 id chronometer
+id clarin
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1682,6 +1686,7 @@ id drop_shadow_bottom
 id drop_shadow_top
 id dropdown_menu
 id edit_query
+id edtNombre
 id email
 id end
 id end_padder
@@ -1721,12 +1726,23 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
+id imgBtn0
+id imgBtn1
+id imgBtn2
+id imgBtn3
+id imgBtn4
+id imgBtn5
+id imgBtn6
+id imgBtn7
+id imgBtn8
 id info
 id invisible
 id irRgstr
 id italic
 id item_touch_helper_previous_elevation
 id labeled
+id lanacion
 id largeLabel
 id left
 id light
@@ -1784,6 +1800,7 @@ id off
 id on
 id outline
 id packed
+id pagina12
 id panel
 id parallax
 id parent
@@ -1900,6 +1917,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txtJugadas
 id unchecked
 id uniform
 id unlabeled
@@ -1979,6 +1997,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_buscar_libro
+layout activity_diarios
+layout activity_juego
 layout activity_libro
 layout activity_libro_elegido
 layout activity_libro_encontrado

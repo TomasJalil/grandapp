@@ -72,6 +72,7 @@
 
     <ImageButton
         android:id="@+id/BtnJoystick"
+        android:onClick="irJuego"
         android:layout_width="135dp"
         android:layout_height="134dp"
         app:layout_constraintBottom_toBottomOf="parent"

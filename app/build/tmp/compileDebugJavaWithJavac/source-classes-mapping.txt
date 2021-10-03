@@ -26,6 +26,8 @@ com/example/grandapp/Libro.java
  com.example.grandapp.Libro
 com/example/grandapp/MainActivity.java
  com.example.grandapp.MainActivity
+com/example/grandapp/Juego.java
+ com.example.grandapp.Juego
 com/example/grandapp/Movimiento.java
  com.example.grandapp.Movimiento
  com.example.grandapp.Movimiento$1
@@ -35,6 +37,11 @@ com/example/grandapp/buscarLibro.java
 com/example/grandapp/RecyclerAdapterLibro.java
  com.example.grandapp.RecyclerAdapterLibro
  com.example.grandapp.RecyclerAdapterLibro$RecyclerHolder
+com/example/grandapp/Diarios.java
+ com.example.grandapp.Diarios
+ com.example.grandapp.Diarios$1
+ com.example.grandapp.Diarios$2
+ com.example.grandapp.Diarios$3
 com/example/grandapp/Video.java
  com.example.grandapp.Video
  com.example.grandapp.Video$1

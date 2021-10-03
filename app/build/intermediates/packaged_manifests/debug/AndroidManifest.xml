@@ -35,6 +35,8 @@
         android:testOnly="true"
         android:theme="@style/Theme.Grandapp"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.grandapp.Juego" />
+        <activity android:name="com.example.grandapp.Diarios" />
         <activity android:name="com.example.grandapp.libroElegido" />
         <activity android:name="com.example.grandapp.libroEncontrado" />
         <activity android:name="com.example.grandapp.libroInicio" />
