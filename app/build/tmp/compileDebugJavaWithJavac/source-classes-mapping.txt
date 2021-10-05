@@ -26,8 +26,6 @@ com/example/grandapp/Libro.java
  com.example.grandapp.Libro
 com/example/grandapp/MainActivity.java
  com.example.grandapp.MainActivity
-com/example/grandapp/Juego.java
- com.example.grandapp.Juego
 com/example/grandapp/Movimiento.java
  com.example.grandapp.Movimiento
  com.example.grandapp.Movimiento$1
@@ -48,6 +46,8 @@ com/example/grandapp/Video.java
 com/example/grandapp/Registro.java
  com.example.grandapp.Registro
  com.example.grandapp.Registro$1
+com/example/grandapp/juego.java
+ com.example.grandapp.juego
 com/example/grandapp/Menu.java
  com.example.grandapp.Menu
 com/example/grandapp/itemListLibro.java

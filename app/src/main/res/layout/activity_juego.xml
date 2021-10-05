@@ -1,172 +1,145 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <EditText
-        android:id="@+id/edtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese su nombre"
-        android:textSize="20dp"
-        android:inputType="text"/>
-
-
-    <LinearLayout
+        android:id="@+id/Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btnJugar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jugar"
-            android:textSize="20dp"
-            android:layout_marginLeft="21dp"
-            android:onClick="AplicarRandom"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="5dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp">
-
-            <ImageButton
-                android:id="@+id/imgBtn0"
-                android:tag="0"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn1"
-                android:tag="1"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn2"
-                android:tag="2"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-
-            <ImageButton
-                android:id="@+id/imgBtn3"
-                android:tag="3"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn4"
-                android:tag="4"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn5"
-                android:tag="5"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp">
-
-            <ImageButton
-                android:id="@+id/imgBtn6"
-                android:tag="6"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn7"
-                android:tag="7"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-            <ImageButton
-                android:id="@+id/imgBtn8"
-                android:tag="8"
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:src="@drawable/img1"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:onClick="ApretarBtn"/>
-
-        </LinearLayout>
+        android:hint="Ingresa tu nombre"
+        android:visibility="visible"
+        />
+    <Button
+        android:id="@+id/Boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="IniciarJuego"
+        android:text="Comienza a jugar"
+        android:visibility="visible"
+        />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="invisible" android:id="@+id/Cartas">
         <TextView
-            android:id="@+id/txtJugadas"
+            android:id="@+id/MostrarNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jugadas: "
-            android:textSize="20dp" />
+            android:text=""
+
+            />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"
+
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"
+
+                />
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"/>
+            <ImageButton
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"/>
+            <ImageButton
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+                android:src="@drawable/banderaarg"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"
+
+
+                />
+            <ImageButton
+                android:id="@+id/img8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+
+                android:src="@drawable/banderaarg"
+
+
+                />
+            <ImageButton
+                android:id="@+id/img9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                android:onClick="IniciarJuego"
+                android:src="@drawable/banderaarg"
+
+
+                />
+            <TextView
+                android:id="@+id/ContJugadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
 
     </LinearLayout>
+    <ImageView
+        android:id="@+id/Win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/jugadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"/>
+
 
 </LinearLayout>
