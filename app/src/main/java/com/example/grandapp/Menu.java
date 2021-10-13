@@ -33,7 +33,7 @@ public class Menu extends AppCompatActivity {
         startActivity(intent);
     }
     public void irJuego(View view){
-        Intent intent = new Intent(this, juego.class);
+        Intent intent = new Intent(this, Juego.class);
         startActivity(intent);
     }
 }

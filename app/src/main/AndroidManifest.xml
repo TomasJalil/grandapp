@@ -17,8 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Grandapp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".juego"></activity>
-        <activity android:name=".Juego" />
+        <activity android:name=".Juego"></activity>
         <activity android:name=".Diarios" />
         <activity android:name=".libroElegido" />
         <activity android:name=".libroEncontrado" />
